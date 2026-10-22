@@ -1,0 +1,7 @@
+---
+const { label, note, kind = '' } = Astro.props;
+---
+<div class:list={['photo',kind]} role="img" aria-label={`${note}: ${label}`}>
+ <div class="rink" aria-hidden="true"><div class="rink-circle"></div><div class="rink-line"></div><span class="ice-word">FALCONS</span><span class="puck"></span></div>
+ <span class="photo-tag">{note}</span><span class="photo-label">{label} <span aria-hidden="true">↗</span></span>
+</div>

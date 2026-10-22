@@ -1,0 +1,31 @@
+---
+import '@fontsource/league-spartan/latin-700.css';
+import '@fontsource/league-spartan/latin-800.css';
+import '@fontsource/roboto/latin-400.css';
+import '@fontsource/roboto/latin-500.css';
+import { content } from '../data/content';
+import Photo from './Photo.astro';
+import './styles.css';
+const {lang = 'de',theme = 'dark'} = Astro.props as {lang:'de'|'it',theme:'dark'|'clean'};
+const t = content[lang];
+const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+const ids = ['einstieg','verein','faq','kontakt'];
+---
+<!doctype html>
+<html lang={lang}>
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>{t.title} | HC Falcons Brixen</title><meta name="description" content={t.description}/><meta name="robots" content="noindex, nofollow"/><meta name="theme-color" content="#CC1417"/><link rel="alternate" hreflang="de" href={`${base}de/${theme}/`}/><link rel="alternate" hreflang="it" href={`${base}it/${theme}/`}/></head>
+<body class={theme}>
+<a class="skip" href="#inhalt">{t.skip}</a>
+<div class="preview"><span>{t.preview} <b>01 / 02</b></span><div><a href={`${base}${lang}/dark/`} aria-current={theme==='dark'?'page':undefined}>A <span>{t.dark}</span></a><a href={`${base}${lang}/clean/`} aria-current={theme==='clean'?'page':undefined}>B <span>{t.clean}</span></a></div></div>
+<header class="header"><a href="#inhalt" class="brand" aria-label="HC Falcons Brixen"><span class="crest" aria-hidden="true">F<span>HC</span></span><span>HC FALCONS<small>BRIXEN · BRESSANONE</small></span></a><nav aria-label={lang==='de'?'Hauptnavigation':'Navigazione principale'}><ul>{t.nav.map((name,i)=><li><a href={`#${ids[i]}`}>{name}</a></li>)}</ul></nav><div class="header-actions"><a class="button small" href="#kontakt">{t.join} <span aria-hidden="true">↗</span></a><div class="languages" aria-label={lang==='de'?'Sprache':'Lingua'}><a href={`${base}de/${theme}/`} aria-current={lang==='de'?'page':undefined}>DE</a><span>/</span><a href={`${base}it/${theme}/`} aria-current={lang==='it'?'page':undefined}>IT</a></div></div></header>
+<main id="inhalt">
+<section class="hero"><div class="hero-content"><p class="eyebrow"><span></span>{t.eyebrow}</p><h1>{t.hero[0]}<br/>{t.hero[1]}<br/><em>{t.hero[2]}</em></h1><p class="intro">{t.intro}</p><div class="hero-buttons"><a class="button" href="#kontakt">{t.cta}<span aria-hidden="true">↗</span></a><a class="text-link" href="#einstieg">{t.secondary}<span aria-hidden="true">↓</span></a></div><div class="hero-bottom"><span class="mini-line"></span>{t.scroll}<span aria-hidden="true">↓</span></div></div><div class="hero-visual"><Photo label={t.heroImage} note={t.imageNote} kind="hero-photo"/><span class="vertical-label" aria-hidden="true">PASSION. TEAM. FALCONS.</span><div class="visual-stamp" aria-hidden="true">BE PART<br/>OF THE<br/><b>TEAM.</b></div></div></section>
+<section class="why section"><div class="section-top"><div><p class="eyebrow">01 / {t.whyLabel}</p><h2>{t.whyTitle}</h2></div><p>{t.whyIntro}</p></div><div class="benefits">{t.benefits.map(([n,title,text])=><article><span class="number">{n}<span aria-hidden="true">↗</span></span><h3>{title}</h3><p>{text}</p></article>)}</div></section>
+<section id="einstieg" class="path section"><div class="path-visual"><Photo label={t.pathImage} note={t.imageNote}/><span class="image-index" aria-hidden="true">01 — START SMALL. DREAM BIG.</span></div><div class="path-content"><p class="eyebrow">02 / {t.pathLabel}</p><h2>{t.pathTitle}</h2><p>{t.pathIntro}</p><ol class="steps">{t.steps.map(([title,text],i)=><li><span>0{i+1}</span><div><h3>{title}</h3><p>{text}</p></div></li>)}</ol></div></section>
+<section id="verein" class="family section"><div class="family-copy"><p class="eyebrow">03 / {t.familyLabel}</p><h2>{t.familyTitle}</h2><p>{t.familyText}</p><ul class="values">{t.values.map(v=><li><span aria-hidden="true">↗</span>{v}</li>)}</ul></div><div><Photo label={t.familyImage} note={t.imageNote} kind="family-photo"/><p class="caption">{t.familyNote}</p></div></section>
+<section id="faq" class="faq section"><div><p class="eyebrow">04 / {t.faqLabel}</p><h2>{t.faqTitle}</h2><p>{t.faqIntro}</p><span class="faq-mark" aria-hidden="true">?</span></div><div class="questions">{t.faqs.map(([q,a],i)=><details><summary><span class="faq-number">0{i+1}</span>{q}<span class="plus" aria-hidden="true"></span></summary><p>{a}</p></details>)}</div></section>
+<section id="kontakt" class="contact section"><div><p class="eyebrow">05 / {t.contactLabel}</p><h2>{t.contactTitle}</h2><p>{t.contactText}</p></div><div class="contact-card"><span class="status-dot"></span><h3>{t.contactMissing}</h3><p>{t.contactHint}</p><span class="pending">{t.contactStatus}</span></div><span class="contact-word" aria-hidden="true">FALCONS</span></section>
+<aside class="sponsors section"><p class="eyebrow">{t.sponsor}</p><p>{t.sponsorText}</p><div aria-hidden="true"><span>PARTNER 01</span><span>PARTNER 02</span><span>PARTNER 03</span></div></aside>
+</main>
+<footer class="footer section"><div class="footer-top"><a class="brand" href="#inhalt"><span class="crest" aria-hidden="true">F<span>HC</span></span><span>HC FALCONS<small>BRIXEN · BRESSANONE</small></span></a><p>{t.footerLine}</p><span>{t.social}</span></div><div class="footer-bottom"><span>© {new Date().getFullYear()} HC Falcons Brixen · {t.prototype}</span><div><a href="#impressum">{t.legal}</a><a href="#datenschutz">{t.privacy}</a><a href="#inhalt" aria-label={lang==='de'?'Nach oben':'Torna su'}>↑</a></div></div><div class="legal-note" id="impressum"><h3>{t.legal}</h3><p>{t.legalText}</p></div><div class="legal-note" id="datenschutz"><h3>{t.privacy}</h3><p>{t.legalText}</p></div></footer>
+</body></html>
