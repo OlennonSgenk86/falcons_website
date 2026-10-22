@@ -24,7 +24,7 @@ npm run preview
 
 Alle Texte: `src/data/content.ts`. Gemeinsamer Aufbau: `src/components/Site.astro`. Gestaltung: `src/components/styles.css`. Bildplatzhalter: `src/components/Photo.astro`.
 
-Keine Originalfotos oder bisherigen Website-Texte wurden bereitgestellt. Die gezeichneten Eisflächen sind ausdrücklich als Platzhalter beschriftet. Auch das F-Schild ist ein vorläufiges typografisches Markenzeichen, kein offizielles Logo. Für die nächste Phase Originalbilder und Logo unter `src/assets/` ablegen und mit Astros Image-Komponente, sinnvollen Alternativtexten und passenden Ausschnitten einbinden.
+Das Original-Logo und sieben Originalfotos wurden über GitHub bereitgestellt und sind eingebunden. Die Zuordnung sowie deutsche und italienische Alternativtexte stehen in `src/data/media.ts`. `src/components/Photo.astro` erzeugt responsive WebP-Bilder über Astro Image; nur das Hero-Bild wird priorisiert, weitere Fotos laden verzögert. Das transparente Original-Logo erscheint in Header und Footer. Die hochgeladenen Originaldateien im Repository-Hauptverzeichnis bleiben unverändert und werden nicht als große Originaldateien an Browser ausgeliefert.
 
 Zu bestätigen: Einstiegsalter, Teilnahmevoraussetzungen, Leihmaterial, Trainingsort und -zeiten, Beiträge, Trainer, Vereinskontakt, Anmeldung, Sponsoren, Social-Media-Adressen sowie vollständige Rechts- und Datenschutzangaben. Es gibt bewusst kein funktionsloses Kontaktformular und keine erfundenen Kontaktdaten. Die italienischen Texte sind ein erster redaktioneller Entwurf und sollten vor Veröffentlichung geprüft werden.
 
@@ -39,6 +39,8 @@ Produktionsbuild mit fünf statischen Seiten erfolgreich. Beide Sprachen und Des
 Der Workflow `.github/workflows/pages.yml` baut bei Push auf `main` und veröffentlicht über GitHub Pages. In GitHub unter **Settings → Pages → Build and deployment → Source** die Option **GitHub Actions** auswählen. Falls der erste Lauf vor Aktivierung fehlschlägt, unter **Actions** den Workflow **Deploy prototype to GitHub Pages** erneut ausführen.
 
 Die vorgesehene Vorschauadresse lautet `https://olennonsgenk86.github.io/falcons_website/`; sie ist erst nach erfolgreichem Deployment erreichbar. Die Sprachlinks berücksichtigen den Projekt-Unterpfad. Lokal bleibt der Basispfad `/`. GitHub Pages stellt die Vorschau öffentlich bereit; `noindex` verhindert keinen direkten Zugriff.
+
+Anmeldeportal und JAKO-Shop sind mit den bestätigten URLs verbunden.
 
 Zum Prüfen des Pages-Builds: `GITHUB_PAGES=true npm run build`. Für Plesk weiterhin ohne diese Variable bauen.
 

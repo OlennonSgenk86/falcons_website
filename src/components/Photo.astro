@@ -1,7 +1,9 @@
 ---
-const { label, note, kind = '' } = Astro.props;
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+interface Props { src: ImageMetadata; alt: string; kind?: string; priority?: boolean; }
+const { src, alt, kind = '', priority = false } = Astro.props;
 ---
-<div class:list={['photo',kind]} role="img" aria-label={`${note}: ${label}`}>
- <div class="rink" aria-hidden="true"><div class="rink-circle"></div><div class="rink-line"></div><span class="ice-word">FALCONS</span><span class="puck"></span></div>
- <span class="photo-tag">{note}</span><span class="photo-label">{label} <span aria-hidden="true">↗</span></span>
+<div class:list={['photo', kind]}>
+ <Image src={src} alt={alt} width={1440} widths={[400, 640, 960, 1440]} sizes={kind.startsWith("gallery") ? "(max-width: 760px) 42vw, (max-width: 1150px) 43vw, 21vw" : "(max-width: 760px) 88vw, 48vw"} format="webp" quality={80} loading={priority ? 'eager' : 'lazy'} fetchpriority={priority ? 'high' : 'auto'} decoding="async" />
 </div>
