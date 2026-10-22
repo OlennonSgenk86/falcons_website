@@ -11,7 +11,7 @@ npm ci --cache /tmp/falcons-npm-cache
 npm run dev
 ```
 
-Routen: `/de/dark/`, `/de/clean/`, `/it/dark/`, `/it/clean/`. `/` zeigt die deutsche Dark-Variante. Die Vorschauleiste wechselt das Design, DE/IT die Sprache. Es wird kein JavaScript an den Browser ausgeliefert; FAQ und Navigation funktionieren nativ.
+Routen: `/de/dark/`, `/de/clean/`, `/it/dark/`, `/it/clean/`. `/` zeigt die deutsche Dark-Variante. Dark Athletic ist die ausgewählte Hauptvariante. Clean Athletic bleibt unter den direkten Routen als Referenz verfügbar. DE/IT wechselt die Sprache. Es wird kein JavaScript an den Browser ausgeliefert; FAQ und Navigation funktionieren nativ.
 
 ```sh
 npm run build
@@ -38,6 +38,10 @@ Produktionsbuild mit fünf statischen Seiten erfolgreich. Beide Sprachen und Des
 
 Der Workflow `.github/workflows/pages.yml` baut bei Push auf `main` und veröffentlicht über GitHub Pages. In GitHub unter **Settings → Pages → Build and deployment → Source** die Option **GitHub Actions** auswählen. Falls der erste Lauf vor Aktivierung fehlschlägt, unter **Actions** den Workflow **Deploy prototype to GitHub Pages** erneut ausführen.
 
-Die vorgesehene Vorschauadresse lautet `https://olennonsgenk86.github.io/falcons_website/`; sie ist erst nach erfolgreichem Deployment erreichbar. Design- und Sprachwechsel berücksichtigen den Projekt-Unterpfad. Lokal bleibt der Basispfad `/`. GitHub Pages stellt die Vorschau öffentlich bereit; `noindex` verhindert keinen direkten Zugriff.
+Die vorgesehene Vorschauadresse lautet `https://olennonsgenk86.github.io/falcons_website/`; sie ist erst nach erfolgreichem Deployment erreichbar. Die Sprachlinks berücksichtigen den Projekt-Unterpfad. Lokal bleibt der Basispfad `/`. GitHub Pages stellt die Vorschau öffentlich bereit; `noindex` verhindert keinen direkten Zugriff.
 
 Zum Prüfen des Pages-Builds: `GITHUB_PAGES=true npm run build`. Für Plesk weiterhin ohne diese Variable bauen.
+
+## Anmeldungen und Shop
+
+Die bestätigten externen URLs werden zentral in `src/data/links.ts` gepflegt. Solange sie fehlen, führen die Navigationspunkte zu den entsprechend beschrifteten Bereichen mit sichtbarem Link-Platzhalter. Keine Zieladressen wurden geraten.
