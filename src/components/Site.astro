@@ -1,4 +1,5 @@
 ---
+import Favicon from './Favicon.astro';
 import '@fontsource/league-spartan/latin-700.css';
 import '@fontsource/league-spartan/latin-800.css';
 import '@fontsource/roboto/latin-400.css';
@@ -24,7 +25,7 @@ const menuTargets = ['#verein', '#angebote', links.registration!, '#onlineshop',
 ---
 <!doctype html>
 <html lang={lang}>
-<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>{t.title} | HC Falcons Brixen</title><meta name="description" content={t.description}/><meta name="robots" content={isLive ? "index, follow" : "noindex, nofollow"}/>{isLive && <link rel="canonical" href={`${liveOrigin}${homePath(lang,theme)}`}/>}<meta name="theme-color" content="#CC1417"/><link rel="alternate" hreflang="de" href={isLive ? `${liveOrigin}/` : `${base}de/${theme}/`}/><link rel="alternate" hreflang="it" href={isLive ? `${liveOrigin}/it/` : `${base}it/${theme}/`}/></head>
+<head><Favicon/><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>{t.title} | HC Falcons Brixen</title><meta name="description" content={t.description}/><meta name="robots" content={isLive ? "index, follow" : "noindex, nofollow"}/>{isLive && <link rel="canonical" href={`${liveOrigin}${homePath(lang,theme)}`}/>}<meta name="theme-color" content="#CC1417"/><link rel="alternate" hreflang="de" href={isLive ? `${liveOrigin}/` : `${base}de/${theme}/`}/><link rel="alternate" hreflang="it" href={isLive ? `${liveOrigin}/it/` : `${base}it/${theme}/`}/></head>
 <body class={theme}>
 <a class="skip" href="#inhalt">{t.skip}</a>
 <header class="header"><a href="#inhalt" class="brand" aria-label="HC Falcons Brixen"><Image class="club-logo" src={media.logo} alt="" width={64} height={64} format="png" loading="eager" /><span>HC FALCONS<small>BRIXEN · BRESSANONE</small></span></a><nav aria-label={lang==='de'?'Hauptnavigation':'Navigazione principale'}><ul>{t.nav.map((name,i)=><li><a href={menuTargets[i]}>{name}</a></li>)}</ul></nav><div class="header-actions"><a class="button small" href="#angebote">{t.join} <span aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M3 3h10v10" stroke="currentColor" stroke-width="1.5"/></svg></span></a><div class="languages" aria-label={lang==='de'?'Sprache':'Lingua'}><a href={homePath('de',theme)} aria-current={lang==='de'?'page':undefined}>DE</a><span>/</span><a href={homePath('it',theme)} aria-current={lang==='it'?'page':undefined}>IT</a></div></div></header>

@@ -7,13 +7,68 @@ import { shopProducts } from '../data/shop';
 const { lang } = Astro.props as {lang: 'de' | 'it'};
 const t = content[lang];
 ---
-<section id="onlineshop" class="shop section" aria-labelledby="shop-title">
+<section data-shop-carousel id="onlineshop" class="shop section" aria-labelledby="shop-title">
  <div class="section-top"><div><p class="eyebrow">{t.shopLabel}</p><h2 id="shop-title">{t.shopTitle}</h2></div><div class="shop-intro"><p>{t.shopText}</p><a class="text-link" href={links.shop!}>{t.shopAction}<Arrow/></a></div></div>
- <p id="shop-scroll-hint" class="shop-scroll-hint">{t.shopScroll}<span aria-hidden="true">↔</span></p>
- <ul class="shop-slider" tabindex="0" aria-label={t.shopLabel} aria-describedby="shop-scroll-hint">
+ <p id="shop-scroll-hint" class="shop-scroll-hint">{t.shopScroll}</p>
+ <div class="shop-controls" hidden><button type="button" data-shop-prev aria-label={lang === 'de' ? 'Vorherige Artikel' : 'Articoli precedenti'} aria-controls="shop-products">←</button><button type="button" data-shop-next aria-label={lang === 'de' ? 'Weitere Artikel' : 'Altri articoli'} aria-controls="shop-products">→</button></div>
+ <ul id="shop-products" class="shop-slider" tabindex="0" aria-label={t.shopLabel} aria-describedby="shop-scroll-hint">
   {shopProducts.map(product => <li class="shop-item"><a href={links.shop!}><div class="shop-product-image">
    <Image class:list={{'shop-wide-image': product.image.width / product.image.height > 1.4}} src={product.image} width={640} widths={[320, 640]} sizes="(max-width: 760px) 82vw, 39vw" format="webp" alt={`${product[lang]} · HC Falcons`} loading="lazy" />
   </div><div class="shop-item-caption"><h3>{product[lang]}</h3><Arrow/></div></a></li>)}
  </ul>
  <a class="button shop-main-link" href={links.shop!}>{t.shopAction}<Arrow/></a>
 </section>
+
+<script>
+ document.querySelectorAll<HTMLElement>('[data-shop-carousel]').forEach(carousel => {
+  const slider = carousel.querySelector<HTMLElement>('.shop-slider')!;
+  const controls = carousel.querySelector<HTMLElement>('.shop-controls')!;
+  const prev = carousel.querySelector<HTMLButtonElement>('[data-shop-prev]')!;
+  const next = carousel.querySelector<HTMLButtonElement>('[data-shop-next]')!;
+  controls.hidden = false;
+  const update = () => {
+   prev.disabled = slider.scrollLeft <= 2;
+   next.disabled = slider.scrollLeft >= slider.scrollWidth - slider.clientWidth - 2;
+  };
+  const move = (direction: number) => {
+   const item = slider.querySelector<HTMLElement>('.shop-item')!;
+   const distance = item.getBoundingClientRect().width + parseFloat(getComputedStyle(slider).gap || '0');
+   slider.scrollBy({left: direction * distance, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
+  };
+  prev.addEventListener('click', () => move(-1));
+  next.addEventListener('click', () => move(1));
+  slider.addEventListener('scroll', update, {passive: true});
+  new ResizeObserver(update).observe(slider);
+  let startX = 0, startScroll = 0, pointer: number | null = null, dragged = false;
+  slider.addEventListener('dragstart', event => event.preventDefault());
+  slider.addEventListener('pointerdown', event => {
+   if (event.pointerType !== 'mouse' || event.button !== 0) return;
+   startX = event.clientX; startScroll = slider.scrollLeft; pointer = event.pointerId; dragged = false;
+  });
+  slider.addEventListener('pointermove', event => {
+   if (pointer !== event.pointerId) return;
+   const delta = event.clientX - startX;
+   if (!dragged && Math.abs(delta) < 6) return;
+   if (!dragged) { dragged = true; slider.setPointerCapture(event.pointerId); slider.classList.add('is-dragging'); }
+   slider.scrollLeft = startScroll - delta;
+  });
+  const release = () => {
+   if (pointer === null) return;
+   const delta = slider.scrollLeft - startScroll;
+   pointer = null;
+   slider.classList.remove('is-dragging');
+   if (dragged && Math.abs(delta) > 40) {
+    const item = slider.querySelector<HTMLElement>('.shop-item')!;
+    const step = item.getBoundingClientRect().width + parseFloat(getComputedStyle(slider).gap || '0');
+    slider.scrollTo({left: startScroll + Math.sign(delta) * Math.max(1, Math.round(Math.abs(delta) / step)) * step, behavior: 'instant'});
+   }
+  };
+  slider.addEventListener('pointerup', release);
+  slider.addEventListener('pointercancel', release);
+  slider.addEventListener('lostpointercapture', release);
+  slider.addEventListener('click', event => {
+   if (dragged) { event.preventDefault(); event.stopPropagation(); dragged = false; }
+  }, true);
+  update();
+ });
+</script>
