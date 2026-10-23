@@ -3,7 +3,7 @@ export const privacy = {
   title: 'Datenschutzerklärung', subtitle: 'Informationen zur Verarbeitung personenbezogener Daten auf unserer Website',
   back: 'Zur Website', language: 'Sprache', updated: 'Stand: 23. Oktober 2026',
   reviewTitle: 'Entwurf für die Veröffentlichung',
-  reviewText: 'Die Erklärung ist auf die aktuelle statische Website abgestimmt. Vor der Live-Veröffentlichung müssen die Betreiberadresse, die genaue Löschfrist der Serverprotokolle, die Angaben zum eingesetzten E-Mail-Dienst sowie die Freigaben und Rechtsgrundlagen für erkennbare Personen auf Vereinsfotos geprüft und ergänzt werden.',
+  reviewText: 'Die Erklärung ist auf die aktuelle statische Website abgestimmt. Vor der Live-Veröffentlichung müssen die Betreiberadresse, die Angaben zum eingesetzten E-Mail-Dienst sowie die Freigaben und Rechtsgrundlagen für erkennbare Personen auf Vereinsfotos geprüft und ergänzt werden.',
   sections: [
    { title: '1. Verantwortlicher und Kontakt', paragraphs: ['Verantwortlich für die Verarbeitung personenbezogener Daten im Zusammenhang mit dieser Website ist der Hockey Club FALCONS Brixen, Fischzuchtweg 21, I-39042 Brixen (BZ), Italien. Für Datenschutzanfragen erreichen Sie uns unter info@hc-falcons.it.'] },
    { title: '2. Umfang dieser Erklärung', paragraphs: ['Diese Erklärung beschreibt den Besuch unserer statischen Vereinswebsite. Die Website bietet Informationen zum Verein und zum Nachwuchssport und verlinkt auf unser Anmeldeportal, den JAKO-Onlineshop und unsere Social-Media-Profile. Sie enthält kein eigenes Kontakt- oder Anmeldeformular, keinen Benutzerbereich und keine eigene Zahlungsabwicklung. Für Anmeldungen und Einkäufe gelten ergänzend die dort bereitgestellten Datenschutzhinweise.'] },
@@ -18,14 +18,14 @@ export const privacy = {
   ],
   hostingTitle: 'Hosting dieser Ansicht',
   github: 'Diese Vorschau wird über GitHub Pages von GitHub, Inc. bereitgestellt. Beim Abruf verarbeitet GitHub Verbindungsdaten, insbesondere IP-Adressen, unter anderem für den Betrieb und die Sicherheit des Dienstes. Einzelheiten, Empfänger, etwaige internationale Übermittlungen und Aufbewahrung richten sich nach den Datenschutzhinweisen von GitHub.',
-  production: 'Hostingpartner der Live-Website www.hc-falcons.it ist Patrick Gasser (ewidenz). Das Hosting erfolgt auf Servern innerhalb der Europäischen Union. Die Zugriffsprotokolle werden monatlich rotiert. Die Rotation legt noch keine Löschfrist fest; die tatsächliche Aufbewahrungsdauer ist derzeit nicht bekannt und wird vor der Live-Veröffentlichung mit dem Hostingpartner geklärt und ergänzt. Auch die Angaben zum eingesetzten E-Mail-Dienst sind noch zu bestätigen.',
+  production: 'Hostingpartner der Live-Website www.hc-falcons.it ist Patrick Gasser (ewidenz). Das Hosting erfolgt auf Servern innerhalb der Europäischen Union. Die Zugriffsprotokolle werden monatlich rotiert und nach zwei Jahren gelöscht. Die monatliche Rotation ist von der Löschung zu unterscheiden: Auch archivierte oder komprimierte Protokolldateien unterliegen dieser Aufbewahrungsfrist. Die Angaben zum eingesetzten E-Mail-Dienst sind vor der Live-Veröffentlichung noch zu bestätigen.',
   githubLink: 'Datenschutzhinweise von GitHub', authorityLink: 'Italienische Datenschutzaufsicht', regulationLink: 'Datenschutz-Grundverordnung',
  },
  it: {
   title: 'Informativa sulla privacy', subtitle: 'Informazioni sul trattamento dei dati personali sul nostro sito web',
   back: 'Torna al sito', language: 'Lingua', updated: 'Aggiornata al 23 ottobre 2026',
   reviewTitle: 'Bozza per la pubblicazione',
-  reviewText: 'L’informativa riguarda l’attuale sito statico. Prima della pubblicazione definitiva occorre verificare e integrare l’indirizzo del titolare, i tempi esatti di conservazione dei log, le informazioni sul servizio e-mail e le autorizzazioni e basi giuridiche per le persone riconoscibili nelle foto del club.',
+  reviewText: 'L’informativa riguarda l’attuale sito statico. Prima della pubblicazione definitiva occorre verificare e integrare l’indirizzo del titolare, le informazioni sul servizio e-mail e le autorizzazioni e basi giuridiche per le persone riconoscibili nelle foto del club.',
   sections: [
    { title: '1. Titolare e contatti', paragraphs: ['Il titolare del trattamento dei dati personali connesso a questo sito è Hockey Club FALCONS Brixen, Fischzuchtweg 21, I-39042 Bressanone (BZ), Italia. Per richieste sulla protezione dei dati potete scrivere a info@hc-falcons.it.'] },
    { title: '2. Ambito dell’informativa', paragraphs: ['Questa informativa riguarda la visita al nostro sito statico. Il sito presenta il club e le attività giovanili e contiene link al portale iscrizioni, allo shop online JAKO e ai nostri profili social. Non contiene moduli propri di contatto o iscrizione, un’area utente o servizi propri di pagamento. Per iscrizioni e acquisti si applicano anche le informative disponibili nei rispettivi servizi.'] },
@@ -40,7 +40,7 @@ export const privacy = {
   ],
   hostingTitle: 'Hosting di questa versione',
   github: 'Questa anteprima è pubblicata tramite GitHub Pages di GitHub, Inc. Durante l’accesso GitHub tratta dati di connessione, in particolare indirizzi IP, anche per il funzionamento e la sicurezza del servizio. Dettagli, destinatari, eventuali trasferimenti internazionali e conservazione sono descritti nell’informativa di GitHub.',
-  production: 'Il partner di hosting del sito www.hc-falcons.it è Patrick Gasser (ewidenz). L’hosting avviene su server all’interno dell’Unione europea. I log di accesso vengono ruotati mensilmente. La rotazione non definisce il termine di cancellazione; il periodo effettivo di conservazione non è attualmente noto e sarà chiarito con il partner di hosting e integrato prima della pubblicazione definitiva. Restano da confermare anche le informazioni sul servizio e-mail.',
+  production: 'Il partner di hosting del sito www.hc-falcons.it è Patrick Gasser (ewidenz). L’hosting avviene su server all’interno dell’Unione europea. I log di accesso vengono ruotati mensilmente e cancellati dopo due anni. La rotazione mensile è distinta dalla cancellazione: questo periodo di conservazione si applica anche ai file di log archiviati o compressi. Le informazioni sul servizio e-mail restano da confermare prima della pubblicazione definitiva.',
   githubLink: 'Informativa privacy di GitHub', authorityLink: 'Garante per la protezione dei dati personali', regulationLink: 'Regolamento generale sulla protezione dei dati',
  },
 };

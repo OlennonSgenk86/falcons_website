@@ -93,7 +93,7 @@ Die FAQ enthalten jetzt neun Fragen. Spiele beginnen in U8; Turniere werden bis 
 - Deutsch: `/de/datenschutz/`, Italienisch: `/it/privacy/`.
 - Gemeinsame Texte: `src/data/privacy.ts`; Darstellung: `src/components/Privacy.astro`.
 - Der Footer verlinkt auf die passende Sprachfassung. Es wurden keine Skripte, Tracker, Consent-Dienste oder Social-Media-Embeds ergänzt.
-- Hostingpartner laut Nutzer: Patrick Gasser (ewidenz), Server innerhalb der EU. Vom Nutzer bestätigt: monatliche Rotation der Zugriffsprotokolle; die tatsächliche Löschfrist ist unbekannt. Rotation und Löschung dürfen nicht gleichgesetzt werden.
+- Hostingpartner laut Nutzer: Patrick Gasser (ewidenz), Server innerhalb der EU. Vom Nutzer bestätigt: monatliche Rotation der Zugriffsprotokolle und Löschung nach zwei Jahren, einschließlich archivierter oder komprimierter Protokolldateien. Rotation und Löschung werden getrennt benannt.
 - GitHub-Pages-Builds erläutern zusätzlich das tatsächlich verwendete Vorschauhosting bei GitHub. Die Produktionstexte beziehen sich auf www.hc-falcons.it und das geplante EU-Hosting.
 - Die verantwortliche Vereinsadresse stammt aus dem WordPress-Impressum (zuletzt geändert 2023) und ist vor Live-Freigabe zu bestätigen. Foto-Freigaben und die tatsächlich einschlägigen Rechtsgrundlagen sind ebenfalls vor Live-Veröffentlichung zu prüfen. Der sichtbar markierte Entwurf wird erst nach Klärung der offenen Angaben zur Live-Fassung.
 - Der SQL-Export und andere Datenbankinhalte bleiben außerhalb des öffentlichen Repositorys.
