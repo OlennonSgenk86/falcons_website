@@ -18,7 +18,7 @@ export const privacy = {
   ],
   hostingTitle: 'Hosting dieser Ansicht',
   github: 'Diese Vorschau wird über GitHub Pages von GitHub, Inc. bereitgestellt. Beim Abruf verarbeitet GitHub Verbindungsdaten, insbesondere IP-Adressen, unter anderem für den Betrieb und die Sicherheit des Dienstes. Einzelheiten, Empfänger, etwaige internationale Übermittlungen und Aufbewahrung richten sich nach den Datenschutzhinweisen von GitHub.',
-  production: 'Hostingpartner der Live-Website www.hc-falcons.it ist Patrick Gasser (ewidenz). Das Hosting erfolgt auf Servern innerhalb der Europäischen Union. Die genaue Löschfrist der Serverprotokolle und die Angaben zum eingesetzten E-Mail-Dienst werden vor der Live-Veröffentlichung noch bestätigt und ergänzt.',
+  production: 'Hostingpartner der Live-Website www.hc-falcons.it ist Patrick Gasser (ewidenz). Das Hosting erfolgt auf Servern innerhalb der Europäischen Union. Die Zugriffsprotokolle werden monatlich rotiert. Die Rotation legt noch keine Löschfrist fest; die tatsächliche Aufbewahrungsdauer ist derzeit nicht bekannt und wird vor der Live-Veröffentlichung mit dem Hostingpartner geklärt und ergänzt. Auch die Angaben zum eingesetzten E-Mail-Dienst sind noch zu bestätigen.',
   githubLink: 'Datenschutzhinweise von GitHub', authorityLink: 'Italienische Datenschutzaufsicht', regulationLink: 'Datenschutz-Grundverordnung',
  },
  it: {
@@ -40,7 +40,7 @@ export const privacy = {
   ],
   hostingTitle: 'Hosting di questa versione',
   github: 'Questa anteprima è pubblicata tramite GitHub Pages di GitHub, Inc. Durante l’accesso GitHub tratta dati di connessione, in particolare indirizzi IP, anche per il funzionamento e la sicurezza del servizio. Dettagli, destinatari, eventuali trasferimenti internazionali e conservazione sono descritti nell’informativa di GitHub.',
-  production: 'Il partner di hosting del sito www.hc-falcons.it è Patrick Gasser (ewidenz). L’hosting avviene su server all’interno dell’Unione europea. Il periodo esatto di conservazione dei log e le informazioni sul servizio e-mail saranno confermati e integrati prima della pubblicazione definitiva.',
+  production: 'Il partner di hosting del sito www.hc-falcons.it è Patrick Gasser (ewidenz). L’hosting avviene su server all’interno dell’Unione europea. I log di accesso vengono ruotati mensilmente. La rotazione non definisce il termine di cancellazione; il periodo effettivo di conservazione non è attualmente noto e sarà chiarito con il partner di hosting e integrato prima della pubblicazione definitiva. Restano da confermare anche le informazioni sul servizio e-mail.',
   githubLink: 'Informativa privacy di GitHub', authorityLink: 'Garante per la protezione dei dati personali', regulationLink: 'Regolamento generale sulla protezione dei dati',
  },
 };
