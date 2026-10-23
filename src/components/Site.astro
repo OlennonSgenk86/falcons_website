@@ -10,6 +10,7 @@ import InlineText from './InlineText.astro';
 import Arrow from './Arrow.astro';
 import Shop from './Shop.astro';
 import { Image } from 'astro:assets';
+import sparkLogo from '../assets/sponsors/spark.png';
 import { media, mediaText } from '../data/media';
 import './styles.css';
 const {lang = 'de',theme = 'dark'} = Astro.props as {lang:'de'|'it',theme:'dark'|'clean'};
@@ -41,7 +42,7 @@ const ids = ['angebote','verein','faq','kontakt'];
 <Shop lang={lang} />
 <section id="faq" class="faq section"><div><p class="eyebrow">04 / {t.faqLabel}</p><h2>{t.faqTitle}</h2><p>{t.faqIntro}</p><span class="faq-mark" aria-hidden="true">?</span></div><div class="questions">{t.faqs.map(([q,a],i)=><details><summary><span class="faq-number">0{i+1}</span>{q}<span class="plus" aria-hidden="true"></span></summary><p><InlineText text={a}/></p></details>)}</div></section>
 <section id="kontakt" class="contact section"><div><p class="eyebrow">05 / {t.contactLabel}</p><h2>{t.contactTitle}</h2><p>{t.contactText}</p><a class="button contact-registration" href={links.registration!}>{t.contactAction}<Arrow/></a></div><div class="contact-card"><p class="eyebrow">{t.contactMailLabel}</p><a class="contact-email" href="mailto:info@hc-falcons.it">info@hc-falcons.it</a><p>{t.contactHint}</p></div><span class="contact-word" aria-hidden="true">FALCONS</span></section>
-<aside class="sponsors section"><p class="eyebrow">{t.sponsor}</p><p>{t.sponsorText}</p><div aria-hidden="true"><span>PARTNER 01</span><span>PARTNER 02</span><span>PARTNER 03</span></div></aside>
+<aside class="sponsors section main-sponsor" aria-label={t.sponsor}><p class="eyebrow">{t.sponsor}</p><Image class="sponsor-logo" src={sparkLogo} alt="Spark" width={160} height={160} format="webp" loading="lazy" /></aside>
 </main>
 <footer class="footer section"><div class="footer-top"><a class="brand" href="#inhalt"><Image class="club-logo" src={media.logo} alt="" width={64} height={64} format="png" loading="eager" /><span>HC FALCONS<small>BRIXEN · BRESSANONE</small></span></a><p>{t.footerLine}</p><div class="footer-contact"><a href="mailto:info@hc-falcons.it">info@hc-falcons.it</a><span>{t.social}</span></div></div><div class="footer-bottom"><span>© {new Date().getFullYear()} HC Falcons Brixen · {t.prototype}</span><div>{links.registration && <a href={links.registration}>{t.registration}</a>}{links.shop && <a href={links.shop}>{t.shop}</a>}<a href="#impressum">{t.legal}</a><a href="#datenschutz">{t.privacy}</a><a href="#inhalt" aria-label={lang==='de'?'Nach oben':'Torna su'}>↑</a></div></div><div class="legal-note" id="impressum"><h3>{t.legal}</h3><p>{t.legalText}</p></div><div class="legal-note" id="datenschutz"><h3>{t.privacy}</h3><p>{t.legalText}</p></div></footer>
 </body></html>

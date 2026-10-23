@@ -40,3 +40,5 @@
 /* Supplied product photos share one stage; wide white canvases use a centered crop. */
 .shop-product-image>img{width:260px;max-width:100%;height:100%;padding:15px;object-fit:contain}.shop-product-image>img.shop-wide-image{object-fit:cover}.shop-item-caption{align-items:start}.shop-item-caption h3{font-size:24px;line-height:1.15}.shop-item-caption .arrow-icon{margin-top:4px}
 @media(max-width:760px){.shop-product-image>img{width:230px}.shop-item-caption h3{font-size:23px}}
+.main-sponsor{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding-top:48px;padding-bottom:48px;background:#fff}.main-sponsor .eyebrow{margin:0;color:var(--muted)}.main-sponsor .sponsor-logo{display:block;width:160px;height:160px;object-fit:contain}
+@media(max-width:760px){.main-sponsor{padding-top:40px;padding-bottom:40px;gap:20px}.main-sponsor .sponsor-logo{width:140px;height:140px}}
