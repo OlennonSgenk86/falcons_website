@@ -88,16 +88,26 @@ Die Startseite nutzt Power Play. Der gemeinsame Angebotsblock hat den hellen Hin
 
 Die FAQ enthalten jetzt neun Fragen. Spiele beginnen in U8; Turniere werden bis U19 angeboten, nationale Meisterschaften ab U12. Die Kostenantwort und der Angebotsblock nennen das kostenlose erste Hockeyschool-Jahr und die U8-Kategorie-Quote ab dem zweiten Jahr. „Anmeldungen“ / „iscrizioni“ verlinkt dort direkt zur Quotenübersicht im bestehenden Registrix-Portal. Die Ausrüstungs-Leihgebühr wird weiterhin getrennt genannt. Alle Angaben sind in Deutsch und Italienisch enthalten.
 
-## Datenschutzerklärung als Entwurf
+## Rechtliche Seiten
 
-- Deutsch: `/de/datenschutz/`, Italienisch: `/it/privacy/`.
-- Gemeinsame Texte: `src/data/privacy.ts`; Darstellung: `src/components/Privacy.astro`.
-- Der Footer verlinkt auf die passende Sprachfassung. Es wurden keine Skripte, Tracker, Consent-Dienste oder Social-Media-Embeds ergänzt.
-- Hostingpartner laut Nutzer: Patrick Gasser (ewidenz), Server innerhalb der EU. Vom Nutzer bestätigt: monatliche Rotation der Zugriffsprotokolle und Löschung nach zwei Jahren, einschließlich archivierter oder komprimierter Protokolldateien. Rotation und Löschung werden getrennt benannt.
-- GitHub-Pages-Builds erläutern zusätzlich das tatsächlich verwendete Vorschauhosting bei GitHub. Die Produktionstexte beziehen sich auf www.hc-falcons.it und das geplante EU-Hosting.
-- Die verantwortliche Vereinsadresse stammt aus dem WordPress-Impressum (zuletzt geändert 2023) und ist vor Live-Freigabe zu bestätigen. Foto-Freigaben und die tatsächlich einschlägigen Rechtsgrundlagen sind ebenfalls vor Live-Veröffentlichung zu prüfen. Der sichtbar markierte Entwurf wird erst nach Klärung der offenen Angaben zur Live-Fassung.
-- Der SQL-Export und andere Datenbankinhalte bleiben außerhalb des öffentlichen Repositorys.
+- Deutsch: `/de/impressum/`, `/de/datenschutz/`; Italienisch: `/it/note-legali/`, `/it/privacy/`.
+- Texte und Darstellung: `src/data/imprint.ts`, `src/components/Imprint.astro`, `src/data/privacy.ts`, `src/components/Privacy.astro`.
+- Anschrift Fischzuchtweg 21, Alex Gusella als gesetzlicher Vertreter und Fotofreigaben wurden vom Nutzer für die Veröffentlichung bestätigt. Oskar Berger bleibt die Ansprechperson für Telefonkontakt.
+- Hostingpartner: Patrick Gasser (ewidenz), Server innerhalb der EU; Serverprotokolle werden monatlich rotiert und nach zwei Jahren einschließlich Archive gelöscht.
+- Der Live-Build enthält keine Entwurfshinweise. Nur die GitHub-Vorschau erläutert ihr zusätzliches Vorschauhosting.
+- Die veröffentlichten Beiträge von 2022 aus dem alten Impressum sind als Archiv übernommen, ohne als aktuelle Beiträge dargestellt zu werden. Datenbankexporte bleiben außerhalb des öffentlichen Repositorys.
 
 ## Telefonkontakt
 
 Bestätigte Telefonnummer: `+3313779485`, Ansprechperson: Oskar Berger. Die gemeinsame Quelle ist `contact` in `src/data/links.ts`. Kontaktbereich, Footer und Datenschutzseiten verwenden anklickbare `tel:`-Links in beiden Sprachen. Oskar Berger wird damit nicht als gesetzlicher Vertreter benannt; diese Funktion ist gesondert zu bestätigen. Die historischen WordPress-Quelldaten bleiben unverändert außerhalb des öffentlichen Repositorys.
+
+## Live-Paket für Plesk
+
+```sh
+npm run build:live
+python3 scripts/package-live.py
+```
+
+Der Build erzeugt `dist-live/` für `https://www.hc-falcons.it/`, mit `/it/` als italienischer Startseite, absoluten Canonical-Adressen, robots.txt und Sitemap. Alternative Designs und die Vergleichsseite werden nicht gebaut; Designumschalter und Prototyp-Hinweise werden nicht ausgegeben. Der Paketierer prüft den Live-Modus, entfernt nicht verwendete Vergleichsbilder aus dem Paket und erstellt `docs/releases/falcons-website-plesk.zip` samt SHA-256-Prüfsumme. Es enthält weder SQL noch PHP noch Quelldateien.
+
+Die [Plesk-Anleitung](docs/PLESK-VEROEFFENTLICHUNG.md) beschreibt Backup, richtigen Dokumentenpfad, Upload, HTTPS, mögliche Weiterleitungen und Rückwechsel. Das ZIP liegt bereit, wurde aber vom Agenten nicht auf Plesk hochgeladen. Der Nutzer übernimmt den Upload. GitHub Pages bleibt eine getrennte Vorschau mit `noindex`.

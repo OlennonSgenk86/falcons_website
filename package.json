@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev --host 0.0.0.0",
     "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
-    "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview --host 0.0.0.0"
+    "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview --host 0.0.0.0",
+    "build:live": "SITE_MODE=live GITHUB_PAGES=false ASTRO_TELEMETRY_DISABLED=1 astro build --outDir dist-live"
   },
   "dependencies": {
     "astro": "^6.0.0",

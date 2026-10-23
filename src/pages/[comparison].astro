@@ -7,6 +7,7 @@ import { designs } from '../data/designs';
 import darkPreview from '../../docs/previews/Variante-A-Dark-Athletic-Hero.png';
 import powerPreview from '../../docs/previews/Variante-C-Power-Play-Hero.png';
 import spiritPreview from '../../docs/previews/Variante-D-Team-Spirit-Hero.png';
+export function getStaticPaths() { return process.env.SITE_MODE === 'live' ? [] : [{ params: { comparison: 'designs' } }]; }
 const previews = [darkPreview, powerPreview, spiritPreview];
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 ---

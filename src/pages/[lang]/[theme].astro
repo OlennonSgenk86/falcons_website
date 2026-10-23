@@ -1,7 +1,7 @@
 ---
 import Site from '../../components/Site.astro';
 import type { Theme } from '../../data/designs';
-export function getStaticPaths() { return ['de','it'].flatMap(lang => ['dark','clean','power','spirit'].map(theme => ({params:{lang,theme}}))); }
+export function getStaticPaths() { if (process.env.SITE_MODE === 'live') return []; return ['de','it'].flatMap(lang => ['dark','clean','power','spirit'].map(theme => ({params:{lang,theme}}))); }
 const {lang,theme} = Astro.params;
 ---
 <Site lang={lang as 'de'|'it'} theme={theme as Theme} />
