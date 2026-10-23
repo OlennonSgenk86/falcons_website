@@ -5,8 +5,8 @@ export const content = {
     "description": "Eishockey entdecken beim HC Falcons Brixen. Ein Einstieg für Kinder und ihre Familien.",
     "registration": "Anmeldungen",
     "shop": "Onlineshop",
-    "shopText": "Falcons auch abseits des Eises: Entdeckt unsere Merchandising-Artikel.",
-    "shopAction": "Zum Onlineshop",
+    "shopText": "Mit Trainingsanzug, Jacke oder T-Shirt zeigt ihr, zu welchem Team ihr gehört. Entdeckt die Vereinskleidung im JAKO-Onlineshop.",
+    "shopAction": "Zum Falcons-Onlineshop",
     "nav": [
       "Einstieg",
       "Verein",
@@ -52,18 +52,15 @@ export const content = {
     "steps": [
       [
         "Noch keine Eislauferfahrung",
-        "Wählt einen passenden Eislaufkurs und meldet euer Kind direkt über das Anmeldeportal an.",
-        "Jetzt anmelden"
+        "Wählt einen passenden Eislaufkurs und meldet euer Kind direkt über das Anmeldeportal an."
       ],
       [
         "Eislauferfahrung vorhanden",
-        "Meldet euer Kind im Anmeldeportal in seiner jeweiligen Alterskategorie an.",
-        "Jetzt anmelden"
+        "Meldet euer Kind im Anmeldeportal in seiner jeweiligen Alterskategorie an."
       ],
       [
         "Erst ausprobieren oder Fragen klären",
-        "Für ein Probetraining oder bei Unsicherheit schreibt an info@hc-falcons.it.",
-        "E-Mail schreiben"
+        "Für ein Probetraining oder bei Unsicherheit schreibt an info@hc-falcons.it."
       ]
     ],
     "familyLabel": "DIE FALCONS-FAMILIE",
@@ -145,13 +142,24 @@ export const content = {
     "cooperation": "U16 und U19 spielen in Kooperation mit Sterzing.",
     "supportTitle": "Eltern als Betreuungspersonen",
     "supportText": "In jeder Kategorie übernehmen Eltern die Betreuerrolle. Sie haben jeweils eine Ansprechperson im Vorstand, die sie dabei unterstützt.",
-    "supportDistinction": "Diese organisatorische Betreuerrolle ist vom sportlichen Trainerteam zu unterscheiden.",
     "contactMailLabel": "Fragen & Probetraining",
     "contactAction": "Zum Anmeldeportal",
     "whyLabel": "MEHR ALS EIN SPORT",
     "whyTitle": "Hier wächst mehr als Können.",
     "whyIntro": "Auf dem Eis lernen Kinder viel – und nehmen noch mehr mit nach Hause.",
-    "categoriesText": "Wir stellen in allen Jugendkategorien eine Mannschaft. So haben alle Kinder von September bis April die Möglichkeit zu trainieren und an Meisterschafts- und Freundschaftsspielen teilzunehmen."
+    "categoriesText": "Wir stellen in allen Jugendkategorien eine Mannschaft. So haben alle Kinder von September bis April die Möglichkeit zu trainieren und an Meisterschafts- und Freundschaftsspielen teilzunehmen.",
+    "entryRegister": "Jetzt anmelden",
+    "entryMail": "Jetzt E-Mail schreiben",
+    "entryActionsHint": "Schon entschieden? Meldet euch direkt an. Für Fragen oder ein Probetraining schreibt uns eine E-Mail.",
+    "shopLabel": "DER FALCONS-LOOK",
+    "shopTitle": "Wie ein Falke. Auch neben dem Eis.",
+    "shopScroll": "Wischen, scrollen oder mit den Pfeiltasten blättern",
+    "shopPhotoPending": "Produktfoto folgt",
+    "shopItems": [
+      "Trainingsanzug",
+      "Jacke",
+      "T-Shirt"
+    ]
   },
   "it": {
     "lang": "it",
@@ -159,8 +167,8 @@ export const content = {
     "description": "Scoprire l’hockey con HC Falcons Brixen. Un primo passo per bambini e famiglie.",
     "registration": "Iscrizioni",
     "shop": "Shop online",
-    "shopText": "Falcons anche fuori dal ghiaccio: scoprite i nostri articoli di merchandising.",
-    "shopAction": "Allo shop online",
+    "shopText": "Con tuta, giacca o T-shirt mostrate di quale squadra fate parte. Scoprite l’abbigliamento del club nello shop online JAKO.",
+    "shopAction": "Allo shop online dei Falcons",
     "nav": [
       "Primi passi",
       "Il club",
@@ -206,18 +214,15 @@ export const content = {
     "steps": [
       [
         "Nessuna esperienza di pattinaggio",
-        "Scegliete un corso di pattinaggio adatto e iscrivete vostro figlio direttamente tramite il portale.",
-        "Iscriviti ora"
+        "Scegliete un corso di pattinaggio adatto e iscrivete vostro figlio direttamente tramite il portale."
       ],
       [
         "Sa già pattinare",
-        "Iscrivete vostro figlio nella rispettiva categoria di età tramite il portale iscrizioni.",
-        "Iscriviti ora"
+        "Iscrivete vostro figlio nella rispettiva categoria di età tramite il portale iscrizioni."
       ],
       [
         "Prima provare o chiarire i dubbi",
-        "Per un allenamento di prova o in caso di dubbi, scrivete a info@hc-falcons.it.",
-        "Scrivi un’e-mail"
+        "Per un allenamento di prova o in caso di dubbi, scrivete a info@hc-falcons.it."
       ]
     ],
     "familyLabel": "LA FAMIGLIA FALCONS",
@@ -299,12 +304,23 @@ export const content = {
     "cooperation": "U16 e U19 in collaborazione con Vipiteno.",
     "supportTitle": "Genitori come accompagnatori",
     "supportText": "In ogni categoria alcuni genitori svolgono il ruolo di accompagnatori. Hanno una persona di riferimento nel direttivo che li sostiene in questo compito.",
-    "supportDistinction": "Questo ruolo di supporto organizzativo è distinto da quello dello staff tecnico degli allenatori.",
     "contactMailLabel": "Domande e allenamento di prova",
     "contactAction": "Al portale iscrizioni",
     "whyLabel": "PIÙ DI UNO SPORT",
     "whyTitle": "Qui si cresce, insieme.",
     "whyIntro": "Sul ghiaccio si impara tanto. E si porta a casa ancora di più.",
-    "categoriesText": "Abbiamo una squadra in tutte le categorie giovanili. Da settembre ad aprile, tutti i bambini hanno così la possibilità di allenarsi e partecipare al campionato e alle partite amichevoli."
+    "categoriesText": "Abbiamo una squadra in tutte le categorie giovanili. Da settembre ad aprile, tutti i bambini hanno così la possibilità di allenarsi e partecipare al campionato e alle partite amichevoli.",
+    "entryRegister": "Iscriviti ora",
+    "entryMail": "Scrivi un’e-mail",
+    "entryActionsHint": "Avete già deciso? Iscrivetevi direttamente. Per domande o un allenamento di prova, scriveteci un’e-mail.",
+    "shopLabel": "IL LOOK DEI FALCONS",
+    "shopTitle": "Un falco. Anche fuori dal ghiaccio.",
+    "shopScroll": "Scorri con un gesto, il mouse o i tasti freccia",
+    "shopPhotoPending": "Foto prodotto in arrivo",
+    "shopItems": [
+      "Tuta",
+      "Giacca",
+      "T-shirt"
+    ]
   }
 };
