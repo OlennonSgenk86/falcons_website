@@ -94,7 +94,7 @@ export const content = {
       ],
       [
         "Was kostet die Teilnahme?",
-        "Das erste Jahr in der Hockeyschool für Kinder unter 8 Jahren ist kostenlos. Die jeweiligen Beiträge sind im Anmeldeportal einsehbar. Für die Leihausrüstung fällt eine Gebühr an."
+        "Das erste Jahr in der Hockeyschool ist kostenlos. Ab dem zweiten Jahr ist die U8-Kategorie-Quote zu bezahlen. Eine Übersicht zu den Quoten der einzelnen Kategorien findet ihr unter Anmeldungen. Für die Leihausrüstung fällt eine Gebühr an."
       ],
       [
         "Wie funktioniert die Anmeldung?",
@@ -103,6 +103,10 @@ export const content = {
       [
         "Können Eltern beim Training dabei sein?",
         "In der U8 dürfen Eltern beim Anziehen helfen. Das Training kann von der Tribüne aus mitverfolgt werden."
+      ],
+      [
+        "Ab wann gibt es Spiele und Meisterschaften?",
+        "Spiele werden ab der U8-Kategorie angeboten. Dazu kommen Turniere in den Nachwuchskategorien bis zur U19. Ab der U12 werden auch nationale Meisterschaften gespielt."
       ]
     ],
     "contactLabel": "EUER ABENTEUER BEGINNT HIER",
@@ -136,7 +140,7 @@ export const content = {
       }
     ],
     "participationLabel": "Teilnahme Hockeyschool",
-    "participationText": "Das erste Jahr in der Hockeyschool ist für Kinder unter 8 Jahren kostenlos. Die jeweiligen Beiträge sind im Anmeldeportal einsehbar.",
+    "participationText": "Das erste Jahr in der Hockeyschool ist kostenlos. Ab dem zweiten Jahr ist die U8-Kategorie-Quote zu bezahlen. Eine Übersicht zu den Quoten der einzelnen Kategorien findet ihr unter Anmeldungen.",
     "equipmentLabel": "Ausrüstung · Leihgebühr",
     "equipmentText": "Der Verein stellt bis 16 Jahre Ausrüstung gegen eine Leihgebühr zur Verfügung. Diese Gebühr ist von der kostenlosen Teilnahme im ersten Hockeyschool-Jahr getrennt.",
     "categoriesLabel": "Unsere Jugendkategorien",
@@ -252,7 +256,7 @@ export const content = {
       ],
       [
         "Quanto costa partecipare?",
-        "Il primo anno nella Hockeyschool è gratuito per i bambini sotto gli 8 anni. Le quote delle rispettive attività sono consultabili nel portale iscrizioni. Per il noleggio dell’attrezzatura è prevista una quota."
+        "Il primo anno nella Hockeyschool è gratuito. Dal secondo anno si paga la quota della categoria U8. Una panoramica delle quote delle singole categorie è disponibile nella sezione iscrizioni. Per il noleggio dell’attrezzatura è prevista una quota."
       ],
       [
         "Come funziona l’iscrizione?",
@@ -261,6 +265,10 @@ export const content = {
       [
         "I genitori possono assistere agli allenamenti?",
         "Nella U8 i genitori possono aiutare i bambini a vestirsi. È possibile seguire l’allenamento dalla tribuna."
+      ],
+      [
+        "Da quando si disputano partite e campionati?",
+        "Le partite sono proposte a partire dalla categoria U8. Si aggiungono tornei nelle categorie giovanili fino alla U19. A partire dalla U12 si disputano anche campionati nazionali."
       ]
     ],
     "contactLabel": "L’AVVENTURA INIZIA QUI",
@@ -294,7 +302,7 @@ export const content = {
       }
     ],
     "participationLabel": "Partecipazione alla Hockeyschool",
-    "participationText": "Il primo anno nella Hockeyschool è gratuito per i bambini sotto gli 8 anni. Le quote delle rispettive attività sono consultabili nel portale iscrizioni.",
+    "participationText": "Il primo anno nella Hockeyschool è gratuito. Dal secondo anno si paga la quota della categoria U8. Una panoramica delle quote delle singole categorie è disponibile nella sezione iscrizioni.",
     "equipmentLabel": "Attrezzatura · quota di noleggio",
     "equipmentText": "Il club mette a disposizione l’attrezzatura fino ai 16 anni dietro pagamento di una quota di noleggio. Questa quota è separata dalla partecipazione gratuita al primo anno di Hockeyschool.",
     "categoriesLabel": "Le nostre categorie giovanili",

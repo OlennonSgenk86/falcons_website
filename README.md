@@ -32,7 +32,7 @@ Schriften (League Spartan und Roboto) werden aus den freien Fontsource-Paketen l
 
 ## Durchgeführte Validierung
 
-Produktionsbuild mit fünf statischen Seiten erfolgreich. Der überarbeitete Einstieg wurde in beiden Sprachen in Chromium bei 320, 375, 768, 1024 und 1440 Pixeln geprüft: HTTP 200, eine Hauptüberschrift, acht bedienbare FAQ-Einträge, vorhandene Ankerziele und kein horizontaler Überlauf. Sprachwechsel geprüft; die statische Ausgabe enthält keine Script-Tags. Die Browserprüfungen ersetzen noch keinen vollständigen Barrierefreiheits-Audit oder eine Prüfung auf echten Mobilgeräten.
+Produktionsbuild mit fünf statischen Seiten erfolgreich. Der überarbeitete Einstieg wurde in beiden Sprachen in Chromium bei 320, 375, 768, 1024 und 1440 Pixeln geprüft: HTTP 200, eine Hauptüberschrift, neun bedienbare FAQ-Einträge, vorhandene Ankerziele und kein horizontaler Überlauf. Sprachwechsel geprüft; die statische Ausgabe enthält keine Script-Tags. Die Browserprüfungen ersetzen noch keinen vollständigen Barrierefreiheits-Audit oder eine Prüfung auf echten Mobilgeräten.
 
 ## GitHub-Pages-Vorschau
 
@@ -48,7 +48,7 @@ Zum Prüfen des Pages-Builds: `GITHUB_PAGES=true npm run build`. Für Plesk weit
 
 Die bestätigten externen URLs werden zentral in `src/data/links.ts` gepflegt. Die Auswahl „Eislaufen lernen“ / „Mit Eishockey starten“ steht direkt hinter dem Hero unter `#angebote`. Hero- und Header-Buttons „Jetzt anmelden“ führen dorthin. Die deutsche Einstiegsbotschaft lautet „Kleine Falken. Große Leidenschaft.“. Kurs- und Kategorieanmeldungen führen ins bestehende Registrix-Portal; Probetraining und Rückfragen an `mailto:info@hc-falcons.it`. Der Shop steht zurückhaltend unterhalb des Kontaktbereichs und im Footer.
 
-Kostenhinweise sind bewusst getrennt: erstes Hockeyschool-Jahr für Kinder unter 8 Jahren kostenlos; Ausrüstungsleihe bis 16 Jahre gegen Gebühr. Für Beträge und aktuelle Kurstermine gilt das Anmeldeportal. Die Werte Bewegung, Freundschaft, Teamgeist und Spaß sind unter „Hier wächst mehr als Können.“ wieder als vier Boxen mit Beschreibung dargestellt. Der separate Saison-/Sommercamp-Block ist entfernt; die bestätigten Saisoninformationen bleiben in den FAQ erhalten. Der Vereinsabschnitt beschreibt den Trainings- und Spielbetrieb aller Jugendkategorien von September bis April.
+Kostenhinweise sind bewusst getrennt: erstes Hockeyschool-Jahr kostenlos, ab dem zweiten Jahr U8-Kategorie-Quote; Ausrüstungsleihe bis 16 Jahre gegen Gebühr. Für Beträge und aktuelle Kurstermine gilt das Anmeldeportal. Die Werte Bewegung, Freundschaft, Teamgeist und Spaß sind unter „Hier wächst mehr als Können.“ wieder als vier Boxen mit Beschreibung dargestellt. Der separate Saison-/Sommercamp-Block ist entfernt; die bestätigten Saisoninformationen bleiben in den FAQ erhalten. Der Vereinsabschnitt beschreibt den Trainings- und Spielbetrieb aller Jugendkategorien von September bis April.
 
 ## Shopvorschau und gemeinsame Einstiegsaktionen
 
@@ -83,3 +83,7 @@ Die neue Gestaltung steht in `src/components/variants.css` und ist vollständig 
 ## Ausgewählte Power-Play-Variante und Social Media
 
 Die Startseite nutzt Power Play. Der gemeinsame Angebotsblock hat den hellen Hintergrund des praktischen Einstiegsabschnitts, dunkle Typografie und keinen roten äußeren Schattenrand. Die übrige Power-Play-Gestaltung bleibt bestehen. Facebook, Instagram und YouTube sind mit den bestätigten Vereinsprofilen als Textlinks im Footer aller Sprach- und Designversionen eingebunden; es gibt keine Social-Media-Embeds oder Tracking-Skripte. Die Ziele stehen in `src/data/links.ts`. Aktuelle Gesamtansichten: `docs/previews/Aktuelle-Website.png` und `docs/previews/Aktuelle-Website-Mobile.png`.
+
+## Spiele und Kategoriequoten
+
+Die FAQ enthalten jetzt neun Fragen. Spiele beginnen in U8; Turniere werden bis U19 angeboten, nationale Meisterschaften ab U12. Die Kostenantwort und der Angebotsblock nennen das kostenlose erste Hockeyschool-Jahr und die U8-Kategorie-Quote ab dem zweiten Jahr. „Anmeldungen“ / „iscrizioni“ verlinkt dort direkt zur Quotenübersicht im bestehenden Registrix-Portal. Die Ausrüstungs-Leihgebühr wird weiterhin getrennt genannt. Alle Angaben sind in Deutsch und Italienisch enthalten.

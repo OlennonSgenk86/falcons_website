@@ -1,6 +1,13 @@
 ---
-const { text } = Astro.props as { text: string };
+import { links } from '../data/links';
+const { text, registrationLabel } = Astro.props as { text: string; registrationLabel?: string };
 const email = 'info@hc-falcons.it';
-const parts = text.split(email);
+const labels = registrationLabel ? [email, registrationLabel] : [email];
+const pattern = new RegExp(`(${labels.map(label => label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'g');
+const parts = text.split(pattern);
 ---
-{parts.map((part, index) => <>{index > 0 && <a class="inline-email" href={`mailto:${email}`}>{email}</a>}{part}</>)}
+{parts.map(part => part === email
+ ? <a class="inline-email" href={`mailto:${email}`}>{part}</a>
+ : registrationLabel && part === registrationLabel
+ ? <a class="inline-email" href={links.registration!}>{part}</a>
+ : part)}
