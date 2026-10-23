@@ -8,10 +8,12 @@ export const content = {
     "shopText": "Mit Trainingskleidung, T-Shirt oder Rucksack zeigt ihr, zu welchem Team ihr gehört. Entdeckt die Vereinskleidung im JAKO-Onlineshop.",
     "shopAction": "Zum Falcons-Onlineshop",
     "nav": [
-      "Einstieg",
       "Verein",
-      "Eltern-FAQ",
-      "Kontakt"
+      "Los geht’s",
+      "Kurse",
+      "Onlineshop",
+      "Kontakt",
+      "FAQ"
     ],
     "join": "Jetzt anmelden",
     "eyebrow": "HC FALCONS BRIXEN · NACHWUCHS",
@@ -164,10 +166,12 @@ export const content = {
     "shopText": "Con abbigliamento da allenamento, T-shirt o zaino mostrate di quale squadra fate parte. Scoprite l’abbigliamento del club nello shop online JAKO.",
     "shopAction": "Allo shop online dei Falcons",
     "nav": [
-      "Primi passi",
       "Il club",
-      "FAQ genitori",
-      "Contatti"
+      "Si parte",
+      "Corsi",
+      "Shop online",
+      "Contatti",
+      "FAQ"
     ],
     "join": "Iscriviti ora",
     "eyebrow": "HC FALCONS BRIXEN · SETTORE GIOVANILE",

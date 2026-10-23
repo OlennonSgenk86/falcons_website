@@ -42,3 +42,5 @@
 @media(max-width:760px){.shop-product-image>img{width:230px}.shop-item-caption h3{font-size:23px}}
 .main-sponsor{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding-top:48px;padding-bottom:48px;background:#fff}.main-sponsor .eyebrow{margin:0;color:var(--muted)}.main-sponsor .sponsor-logo{display:block;width:160px;height:160px;object-fit:contain}
 @media(max-width:760px){.main-sponsor{padding-top:40px;padding-bottom:40px;gap:20px}.main-sponsor .sponsor-logo{width:140px;height:140px}}
+.main-sponsor{border-top:1px solid var(--line);padding-top:55px;padding-bottom:55px;gap:25px}.main-sponsor .sponsor-logo{width:200px;height:200px}.main-sponsor .eyebrow{font-size:12px!important;letter-spacing:.14em}
+@media(max-width:760px){.main-sponsor{padding-top:45px;padding-bottom:45px}.main-sponsor .sponsor-logo{width:180px;height:180px}}

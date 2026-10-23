@@ -65,3 +65,7 @@ Die beiden Einstiegswege sind als ein zusammenhängender Bild-Text-Block gestalt
 ## Hauptsponsor Spark
 
 Der Bereich unmittelbar vor dem Footer zeigt das vom Nutzer bereitgestellte Spark-Logo mit „Unser Hauptsponsor“ / „Il nostro sponsor principale“. Die RGB-Positivversion aus dem Logo-ZIP liegt unverändert unter `src/assets/sponsors/spark.png`; Astro erzeugt die optimierte Webausgabe. Es wurde keine unbestätigte Sponsor-URL ergänzt. Die bisherigen Partner-Platzhalter sind ersetzt.
+
+## Finale Menüreihenfolge
+
+Deutsch: Verein → Los geht’s → Kurse → Onlineshop → Kontakt → FAQ. Italienisch: Il club → Si parte → Corsi → Shop online → Contatti → FAQ. „Kurse“ führt wie bisher „Anmeldungen“ zum Registrix-Portal; die anderen Punkte führen zu den jeweiligen Seitenabschnitten. Spark steht als Hauptsponsor direkt vor dem Footer. Zusätzlich zum vollständigen Seiten-PNG gibt es `docs/previews/Hauptsponsor-Spark.png` als Detailansicht.
