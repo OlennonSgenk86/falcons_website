@@ -87,3 +87,13 @@ Die Startseite nutzt Power Play. Der gemeinsame Angebotsblock hat den hellen Hin
 ## Spiele und Kategoriequoten
 
 Die FAQ enthalten jetzt neun Fragen. Spiele beginnen in U8; Turniere werden bis U19 angeboten, nationale Meisterschaften ab U12. Die Kostenantwort und der Angebotsblock nennen das kostenlose erste Hockeyschool-Jahr und die U8-Kategorie-Quote ab dem zweiten Jahr. „Anmeldungen“ / „iscrizioni“ verlinkt dort direkt zur Quotenübersicht im bestehenden Registrix-Portal. Die Ausrüstungs-Leihgebühr wird weiterhin getrennt genannt. Alle Angaben sind in Deutsch und Italienisch enthalten.
+
+## Datenschutzerklärung als Entwurf
+
+- Deutsch: `/de/datenschutz/`, Italienisch: `/it/privacy/`.
+- Gemeinsame Texte: `src/data/privacy.ts`; Darstellung: `src/components/Privacy.astro`.
+- Der Footer verlinkt auf die passende Sprachfassung. Es wurden keine Skripte, Tracker, Consent-Dienste oder Social-Media-Embeds ergänzt.
+- Hostingpartner laut Nutzer: Patrick Gasser (ewidenz), Server innerhalb der EU. Die Angabe „monatlich“ zur Protokollaufbewahrung ist noch nicht als konkrete Löschfrist bestätigt.
+- GitHub-Pages-Builds erläutern zusätzlich das tatsächlich verwendete Vorschauhosting bei GitHub. Die Produktionstexte beziehen sich auf www.hc-falcons.it und das geplante EU-Hosting.
+- Die verantwortliche Vereinsadresse stammt aus dem WordPress-Impressum (zuletzt geändert 2023) und ist vor Live-Freigabe zu bestätigen. Foto-Freigaben und die tatsächlich einschlägigen Rechtsgrundlagen sind ebenfalls vor Live-Veröffentlichung zu prüfen. Der sichtbar markierte Entwurf wird erst nach Klärung der offenen Angaben zur Live-Fassung.
+- Der SQL-Export und andere Datenbankinhalte bleiben außerhalb des öffentlichen Repositorys.
