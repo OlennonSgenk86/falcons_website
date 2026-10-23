@@ -5,7 +5,7 @@ export const content = {
     "description": "Eishockey entdecken beim HC Falcons Brixen. Ein Einstieg für Kinder und ihre Familien.",
     "registration": "Anmeldungen",
     "shop": "Onlineshop",
-    "shopText": "Mit Trainingsanzug, Jacke oder T-Shirt zeigt ihr, zu welchem Team ihr gehört. Entdeckt die Vereinskleidung im JAKO-Onlineshop.",
+    "shopText": "Mit Trainingskleidung, T-Shirt oder Rucksack zeigt ihr, zu welchem Team ihr gehört. Entdeckt die Vereinskleidung im JAKO-Onlineshop.",
     "shopAction": "Zum Falcons-Onlineshop",
     "nav": [
       "Einstieg",
@@ -154,13 +154,7 @@ export const content = {
     "entryActionsHint": "Schon entschieden? Meldet euch direkt an. Für Fragen oder ein Probetraining schreibt uns eine E-Mail.",
     "shopLabel": "DER FALCONS-LOOK",
     "shopTitle": "Wie ein Falke. Auch neben dem Eis.",
-    "shopScroll": "Wischen, scrollen oder mit den Pfeiltasten blättern",
-    "shopPhotoPending": "Produktfoto folgt",
-    "shopItems": [
-      "Trainingsanzug",
-      "Jacke",
-      "T-Shirt"
-    ]
+    "shopScroll": "Wischen, scrollen oder mit den Pfeiltasten blättern"
   },
   "it": {
     "lang": "it",
@@ -168,7 +162,7 @@ export const content = {
     "description": "Scoprire l’hockey con HC Falcons Brixen. Un primo passo per bambini e famiglie.",
     "registration": "Iscrizioni",
     "shop": "Shop online",
-    "shopText": "Con tuta, giacca o T-shirt mostrate di quale squadra fate parte. Scoprite l’abbigliamento del club nello shop online JAKO.",
+    "shopText": "Con abbigliamento da allenamento, T-shirt o zaino mostrate di quale squadra fate parte. Scoprite l’abbigliamento del club nello shop online JAKO.",
     "shopAction": "Allo shop online dei Falcons",
     "nav": [
       "Primi passi",
@@ -317,12 +311,6 @@ export const content = {
     "entryActionsHint": "Avete già deciso? Iscrivetevi direttamente. Per domande o un allenamento di prova, scriveteci un’e-mail.",
     "shopLabel": "IL LOOK DEI FALCONS",
     "shopTitle": "Un falco. Anche fuori dal ghiaccio.",
-    "shopScroll": "Scorri con un gesto, il mouse o i tasti freccia",
-    "shopPhotoPending": "Foto prodotto in arrivo",
-    "shopItems": [
-      "Tuta",
-      "Giacca",
-      "T-shirt"
-    ]
+    "shopScroll": "Scorri con un gesto, il mouse o i tasti freccia"
   }
 };

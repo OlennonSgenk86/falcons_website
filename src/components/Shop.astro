@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import Arrow from './Arrow.astro';
 import { content } from '../data/content';
 import { links } from '../data/links';
-import { shopImages } from '../data/shop';
+import { shopProducts } from '../data/shop';
 const { lang } = Astro.props as {lang: 'de' | 'it'};
 const t = content[lang];
 ---
@@ -11,9 +11,9 @@ const t = content[lang];
  <div class="section-top"><div><p class="eyebrow">{t.shopLabel}</p><h2 id="shop-title">{t.shopTitle}</h2></div><div class="shop-intro"><p>{t.shopText}</p><a class="text-link" href={links.shop!}>{t.shopAction}<Arrow/></a></div></div>
  <p id="shop-scroll-hint" class="shop-scroll-hint">{t.shopScroll}<span aria-hidden="true">↔</span></p>
  <ul class="shop-slider" tabindex="0" aria-label={t.shopLabel} aria-describedby="shop-scroll-hint">
-  {t.shopItems.map((name,i) => <li class="shop-item"><a href={links.shop!}><div class="shop-product-image">
-   {shopImages[i] ? <Image src={shopImages[i]!} width={640} format="webp" alt={name} loading="lazy" /> : <div class="product-pending"><svg viewBox="0 0 48 48" width="45" height="45" fill="none" aria-hidden="true"><path d="M10 16h28l3 26H7l3-26ZM17 17V12a7 7 0 0 1 14 0v5" stroke="currentColor" stroke-width="1.5"/></svg><span>{t.shopPhotoPending}</span></div>}
-  </div><div class="shop-item-caption"><h3>{name}</h3><Arrow/></div></a></li>)}
+  {shopProducts.map(product => <li class="shop-item"><a href={links.shop!}><div class="shop-product-image">
+   <Image class:list={{'shop-wide-image': product.image.width / product.image.height > 1.4}} src={product.image} width={640} widths={[320, 640]} sizes="(max-width: 760px) 82vw, 39vw" format="webp" alt={`${product[lang]} · HC Falcons`} loading="lazy" />
+  </div><div class="shop-item-caption"><h3>{product[lang]}</h3><Arrow/></div></a></li>)}
  </ul>
  <a class="button shop-main-link" href={links.shop!}>{t.shopAction}<Arrow/></a>
 </section>

@@ -54,9 +54,9 @@ Kostenhinweise sind bewusst getrennt: erstes Hockeyschool-Jahr für Kinder unter
 
 Unter dem praktischen Einstiegsleitfaden stehen genau zwei gemeinsame Aktionen: Anmeldung im Registrix-Portal und E-Mail an den Verein. Die einzelnen Schritte haben keine eigenen Buttons mehr. Der gesonderte Abgrenzungssatz zur Elternbetreuung ist entfernt.
 
-`src/components/Shop.astro` zeigt einen nativen, per Touch, Trackpad und Tastatur bedienbaren Scroll-Snap-Slider mit Shoplink. Kein Autoplay und kein zusätzliches Browser-JavaScript. Die genannten Kategorien Trainingsanzug, Jacke und T-Shirt stammen vom Nutzer; konkrete Modelle, Preise oder Verfügbarkeiten wurden nicht ergänzt.
+`src/components/Shop.astro` zeigt direkt unter „Einblicke aufs Eis“ einen nativen, per Touch, Trackpad und Tastatur bedienbaren Scroll-Snap-Slider. Kein Autoplay und kein zusätzliches Browser-JavaScript. Alle elf vom Nutzer hochgeladenen Produktbilder werden über `src/data/shop.ts` eingebunden und von Astro als WebP optimiert. Jedes Bild und seine deutsche beziehungsweise italienische Beschriftung führen zum bestätigten JAKO-Falcons-Shop. Die Originale bleiben unverändert. Preise, Modellnamen oder Verfügbarkeiten wurden nicht erfunden.
 
-**Noch offen: echte Produktfotos.** Der Abruf von `https://team.jako.com/de-de/team/falcons/` wird durch den Netzwerkproxy dieser Cloud-Umgebung mit HTTP 403 beim CONNECT blockiert. Die Netzwerkfreigabe für `team.jako.com` wurde als Konfigurationsentwurf gespeichert; dies aktiviert den Zugriff noch nicht. Nach Freigabe ggf. zusätzlich die vom Shop tatsächlich verwendeten Bilddomains prüfen. Alternativ freigegebene Produktbilder im Repository hochladen. Anschließend in `src/data/shop.ts` importieren und die drei `null`-Einträge ersetzen. Bis dahin werden klar beschriftete Fotoplatzhalter gezeigt. Keine Produktbilder wurden erfunden oder aus anderen Shops übernommen.
+Die Produktbilder sind nun lokal vorhanden; ein Abruf des Shops zur Laufzeit ist nicht nötig. Die bisherigen Fotoplatzhalter sind entfernt.
 
 ## Gemeinsamer Angebotsblock
 
