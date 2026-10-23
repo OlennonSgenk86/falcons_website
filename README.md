@@ -57,3 +57,7 @@ Unter dem praktischen Einstiegsleitfaden stehen genau zwei gemeinsame Aktionen: 
 `src/components/Shop.astro` zeigt einen nativen, per Touch, Trackpad und Tastatur bedienbaren Scroll-Snap-Slider mit Shoplink. Kein Autoplay und kein zusätzliches Browser-JavaScript. Die genannten Kategorien Trainingsanzug, Jacke und T-Shirt stammen vom Nutzer; konkrete Modelle, Preise oder Verfügbarkeiten wurden nicht ergänzt.
 
 **Noch offen: echte Produktfotos.** Der Abruf von `https://team.jako.com/de-de/team/falcons/` wird durch den Netzwerkproxy dieser Cloud-Umgebung mit HTTP 403 beim CONNECT blockiert. Die Netzwerkfreigabe für `team.jako.com` wurde als Konfigurationsentwurf gespeichert; dies aktiviert den Zugriff noch nicht. Nach Freigabe ggf. zusätzlich die vom Shop tatsächlich verwendeten Bilddomains prüfen. Alternativ freigegebene Produktbilder im Repository hochladen. Anschließend in `src/data/shop.ts` importieren und die drei `null`-Einträge ersetzen. Bis dahin werden klar beschriftete Fotoplatzhalter gezeigt. Keine Produktbilder wurden erfunden oder aus anderen Shops übernommen.
+
+## Gemeinsamer Angebotsblock
+
+Die beiden Einstiegswege sind als ein zusammenhängender Bild-Text-Block gestaltet: Originalfoto vom Eislaufenlernen links, zwei durch eine Linie getrennte Informationsbereiche rechts. Auf schmalen Displays steht das Bild über den Angeboten. Alle bestätigten Angaben und Anmelde-/E-Mail-Ziele bleiben erhalten. Texte und Bildunterschrift sind in Deutsch und Italienisch verfügbar.
