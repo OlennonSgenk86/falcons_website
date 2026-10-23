@@ -69,3 +69,13 @@ Der Bereich unmittelbar vor dem Footer zeigt das vom Nutzer bereitgestellte Spar
 ## Finale Menüreihenfolge
 
 Deutsch: Verein → Los geht’s → Kurse → Onlineshop → Kontakt → FAQ. Italienisch: Il club → Si parte → Corsi → Shop online → Contatti → FAQ. „Kurse“ führt wie bisher „Anmeldungen“ zum Registrix-Portal; die anderen Punkte führen zu den jeweiligen Seitenabschnitten. Spark steht als Hauptsponsor direkt vor dem Footer. Zusätzlich zum vollständigen Seiten-PNG gibt es `docs/previews/Hauptsponsor-Spark.png` als Detailansicht.
+
+## Zwei zusätzliche Designrichtungen
+
+Die aktuelle Dark-Athletic-Variante bleibt die Startseite. Zusätzliche Ansichten mit identischem Inhalt:
+
+- `/de/power/` und `/it/power/`: **Power Play** – großflächiger Foto-Hero, starke Kontraste, diagonale Abschlüsse, Arena-Atmosphäre.
+- `/de/spirit/` und `/it/spirit/`: **Team Spirit** – warmer Papierhintergrund, Originalfoto-Collage, versetzte Bildrahmen und eine persönlichere Magazin-Anmutung.
+- `/designs/`: Vergleich der bisherigen Version mit beiden neuen Entwürfen. Die alte Clean-Variante bleibt unter ihrer bisherigen Direktadresse verfügbar.
+
+Die neue Gestaltung steht in `src/components/variants.css` und ist vollständig auf die Klassen `power` und `spirit` begrenzt. Texte, Angebote, Navigation, Registrix-/Shoplinks und Sponsor sind gemeinsam gepflegt. Es gibt keine automatisch laufenden Animationen und kein zusätzliches Browser-JavaScript. Die Vergleichsleiste erscheint nur in den beiden neuen Varianten. PNGs für Desktop und Smartphone liegen unter `docs/previews/Variante-C-Power-Play*` und `docs/previews/Variante-D-Team-Spirit*`.
