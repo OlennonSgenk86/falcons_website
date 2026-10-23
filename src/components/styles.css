@@ -44,3 +44,5 @@
 @media(max-width:760px){.main-sponsor{padding-top:40px;padding-bottom:40px;gap:20px}.main-sponsor .sponsor-logo{width:140px;height:140px}}
 .main-sponsor{border-top:1px solid var(--line);padding-top:55px;padding-bottom:55px;gap:25px}.main-sponsor .sponsor-logo{width:200px;height:200px}.main-sponsor .eyebrow{font-size:12px!important;letter-spacing:.14em}
 @media(max-width:760px){.main-sponsor{padding-top:45px;padding-bottom:45px}.main-sponsor .sponsor-logo{width:180px;height:180px}}
+.social-links{display:flex;flex-wrap:wrap;gap:16px;align-items:center}.social-links a{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:#dce1e0;text-decoration:underline;text-underline-offset:4px}.social-links .arrow-icon{width:11px;height:11px}.social-links a:hover{color:white}
+@media(max-width:760px){.footer-contact{gap:16px}.social-links{gap:17px}}

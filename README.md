@@ -11,7 +11,7 @@ npm ci --cache /tmp/falcons-npm-cache
 npm run dev
 ```
 
-Routen: `/de/dark/`, `/de/clean/`, `/it/dark/`, `/it/clean/`. `/` zeigt die deutsche Dark-Variante. Dark Athletic ist die ausgewählte Hauptvariante. Clean Athletic bleibt unter den direkten Routen als Referenz verfügbar. DE/IT wechselt die Sprache. Es wird kein JavaScript an den Browser ausgeliefert; FAQ und Navigation funktionieren nativ.
+Routen: `/de/dark/`, `/de/clean/`, `/it/dark/`, `/it/clean/`. `/` zeigt die ausgewählte deutsche Power-Play-Variante. Clean Athletic bleibt unter den direkten Routen als Referenz verfügbar. DE/IT wechselt die Sprache. Es wird kein JavaScript an den Browser ausgeliefert; FAQ und Navigation funktionieren nativ.
 
 ```sh
 npm run build
@@ -72,10 +72,14 @@ Deutsch: Verein → Los geht’s → Kurse → Onlineshop → Kontakt → FAQ. I
 
 ## Zwei zusätzliche Designrichtungen
 
-Die aktuelle Dark-Athletic-Variante bleibt die Startseite. Zusätzliche Ansichten mit identischem Inhalt:
+Power Play ist als aktuelle Hauptvariante ausgewählt. Dark Athletic bleibt als Vergleich erhalten. Zusätzliche Ansichten mit identischem Inhalt:
 
 - `/de/power/` und `/it/power/`: **Power Play** – großflächiger Foto-Hero, starke Kontraste, diagonale Abschlüsse, Arena-Atmosphäre.
 - `/de/spirit/` und `/it/spirit/`: **Team Spirit** – warmer Papierhintergrund, Originalfoto-Collage, versetzte Bildrahmen und eine persönlichere Magazin-Anmutung.
 - `/designs/`: Vergleich der bisherigen Version mit beiden neuen Entwürfen. Die alte Clean-Variante bleibt unter ihrer bisherigen Direktadresse verfügbar.
 
 Die neue Gestaltung steht in `src/components/variants.css` und ist vollständig auf die Klassen `power` und `spirit` begrenzt. Texte, Angebote, Navigation, Registrix-/Shoplinks und Sponsor sind gemeinsam gepflegt. Es gibt keine automatisch laufenden Animationen und kein zusätzliches Browser-JavaScript. Die Vergleichsleiste erscheint nur in den beiden neuen Varianten. PNGs für Desktop und Smartphone liegen unter `docs/previews/Variante-C-Power-Play*` und `docs/previews/Variante-D-Team-Spirit*`.
+
+## Ausgewählte Power-Play-Variante und Social Media
+
+Die Startseite nutzt Power Play. Der gemeinsame Angebotsblock hat den hellen Hintergrund des praktischen Einstiegsabschnitts, dunkle Typografie und keinen roten äußeren Schattenrand. Die übrige Power-Play-Gestaltung bleibt bestehen. Facebook, Instagram und YouTube sind mit den bestätigten Vereinsprofilen als Textlinks im Footer aller Sprach- und Designversionen eingebunden; es gibt keine Social-Media-Embeds oder Tracking-Skripte. Die Ziele stehen in `src/data/links.ts`. Aktuelle Gesamtansichten: `docs/previews/Aktuelle-Website.png` und `docs/previews/Aktuelle-Website-Mobile.png`.

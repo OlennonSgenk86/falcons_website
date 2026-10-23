@@ -14,3 +14,5 @@
 @media(max-width:760px){.power .hero-visual{height:auto}.power .hero h1{font-size:clamp(40px,11.2vw,80px);transform:skewX(-3deg)}.power .visual-stamp{bottom:45px;right:8%}.power .hero .intro{max-width:300px}}
 .spirit .contact>div.contact-card>p:not(.eyebrow){color:#525b57}
 .power .family .eyebrow,.power .faq .eyebrow{color:#fff}
+/* Selected Power Play: a softer entry panel matches the practical guide. */
+.power .offer-feature{background:#e8e9e1;color:#172027;box-shadow:none;border:1px solid #d0d5cb}.power .offer-feature .offer-badge{color:#cc1417}.power .offer-feature .offer-card>p:not(.offer-badge),.power .offer-feature .offer-costs dd{color:#515b59}.power .offer-feature .hockey-offer,.power .offer-feature .offer-costs>div+div{border-color:#c6cdc2}.power .offer-feature .trial-link{color:#172027}
