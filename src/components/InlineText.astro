@@ -1,0 +1,6 @@
+---
+const { text } = Astro.props as { text: string };
+const email = 'info@hc-falcons.it';
+const parts = text.split(email);
+---
+{parts.map((part, index) => <>{index > 0 && <a class="inline-email" href={`mailto:${email}`}>{email}</a>}{part}</>)}

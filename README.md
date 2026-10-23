@@ -18,21 +18,21 @@ npm run build
 npm run preview
 ```
 
-`dist/` enthält die statische Website und kann später auf Plesk im Dokumentenverzeichnis bereitgestellt werden. Es wurde nichts veröffentlicht.
+`dist/` enthält die statische Website und kann später auf Plesk im Dokumentenverzeichnis bereitgestellt werden. Auf dem Plesk-Live-Server wurde nichts veröffentlicht.
 
 ## Inhalte und offene Angaben
 
-Alle Texte: `src/data/content.ts`. Gemeinsamer Aufbau: `src/components/Site.astro`. Gestaltung: `src/components/styles.css`. Bildplatzhalter: `src/components/Photo.astro`.
+Alle Texte: `src/data/content.ts`. Gemeinsamer Aufbau: `src/components/Site.astro`. Gestaltung: `src/components/styles.css`. Responsive Bildausgabe: `src/components/Photo.astro`.
 
 Das Original-Logo und sieben Originalfotos wurden über GitHub bereitgestellt und sind eingebunden. Die Zuordnung sowie deutsche und italienische Alternativtexte stehen in `src/data/media.ts`. `src/components/Photo.astro` erzeugt responsive WebP-Bilder über Astro Image; nur das Hero-Bild wird priorisiert, weitere Fotos laden verzögert. Das transparente Original-Logo erscheint in Header und Footer. Die hochgeladenen Originaldateien im Repository-Hauptverzeichnis bleiben unverändert und werden nicht als große Originaldateien an Browser ausgeliefert.
 
-Zu bestätigen: Einstiegsalter, Teilnahmevoraussetzungen, Leihmaterial, Trainingsort und -zeiten, Beiträge, Trainer, Vereinskontakt, Anmeldung, Sponsoren, Social-Media-Adressen sowie vollständige Rechts- und Datenschutzangaben. Es gibt bewusst kein funktionsloses Kontaktformular und keine erfundenen Kontaktdaten. Die italienischen Texte sind ein erster redaktioneller Entwurf und sollten vor Veröffentlichung geprüft werden.
+Bestätigte Angaben zu Einstieg, Saison, Hockeyschool, Ausrüstungsleihe, Jugendkategorien, Elternbetreuung und Kontakt sind in beiden Sprachen eingepflegt. Konkrete Kurstermine und Beiträge werden im bestehenden Anmeldeportal ausgewiesen. Noch offen für die finale Veröffentlichung: Sponsoren, Social-Media-Adressen sowie vollständige Rechts- und Datenschutzangaben. Keine konkreten Trainingszeiten, Schnupper- oder Leihgebühren und keine Qualifikationen des Trainerteams wurden ergänzt. Es gibt bewusst kein funktionsloses Kontaktformular und keine erfundenen Kontaktdaten. Die italienischen Texte sind ein erster redaktioneller Entwurf und sollten vor Veröffentlichung geprüft werden.
 
 Schriften (League Spartan und Roboto) werden aus den freien Fontsource-Paketen lokal eingebunden. Keine externen Fontdienste, Tracker, kostenpflichtigen Komponenten oder Laufzeitdienste. Die interne Vorschau verwendet `noindex, nofollow`; das ersetzt keinen Zugriffsschutz. Vor einer späteren Veröffentlichung finale Inhalte, Bildrechte, Rechtsangaben, Domain/Canonical- und hreflang-URLs ergänzen und die Indexierungsregel gezielt anpassen.
 
 ## Durchgeführte Validierung
 
-Produktionsbuild mit fünf statischen Seiten erfolgreich. Beide Sprachen und Designs in Chromium bei 375, 768 und 1440 Pixeln geprüft: HTTP 200, eine Hauptüberschrift, fünf bedienbare FAQ-Einträge, vorhandene Ankerziele und kein horizontaler Überlauf. Design- und Sprachwechsel geprüft; die statische Ausgabe enthält keine Script-Tags. Die Browserprüfungen ersetzen noch keinen vollständigen Barrierefreiheits-Audit oder eine Prüfung auf echten Mobilgeräten.
+Produktionsbuild mit fünf statischen Seiten erfolgreich. Der überarbeitete Einstieg wurde in beiden Sprachen in Chromium bei 320, 375, 768, 1024 und 1440 Pixeln geprüft: HTTP 200, eine Hauptüberschrift, acht bedienbare FAQ-Einträge, vorhandene Ankerziele und kein horizontaler Überlauf. Sprachwechsel geprüft; die statische Ausgabe enthält keine Script-Tags. Die Browserprüfungen ersetzen noch keinen vollständigen Barrierefreiheits-Audit oder eine Prüfung auf echten Mobilgeräten.
 
 ## GitHub-Pages-Vorschau
 
@@ -46,4 +46,6 @@ Zum Prüfen des Pages-Builds: `GITHUB_PAGES=true npm run build`. Für Plesk weit
 
 ## Anmeldungen und Shop
 
-Die bestätigten externen URLs werden zentral in `src/data/links.ts` gepflegt. Solange sie fehlen, führen die Navigationspunkte zu den entsprechend beschrifteten Bereichen mit sichtbarem Link-Platzhalter. Keine Zieladressen wurden geraten.
+Die bestätigten externen URLs werden zentral in `src/data/links.ts` gepflegt. Die Auswahl „Eislaufen lernen“ / „Mit Eishockey starten“ steht direkt hinter dem Hero unter `#angebote`. Hero- und Header-Mitmachbuttons führen dorthin. Kurs- und Kategorieanmeldungen führen ins bestehende Registrix-Portal; Probetraining und Rückfragen an `mailto:info@hc-falcons.it`. Der Shop steht zurückhaltend unterhalb des Kontaktbereichs und im Footer.
+
+Kostenhinweise sind bewusst getrennt: erstes Hockeyschool-Jahr für Kinder unter 8 Jahren kostenlos; Ausrüstungsleihe bis 16 Jahre gegen Gebühr. Für Beträge und aktuelle Kurstermine gilt das Anmeldeportal. Die allgemeinen Vorteile sind auf eine kompakte Zeile reduziert.

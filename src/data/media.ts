@@ -14,7 +14,7 @@ export const mediaText = {
   hero: 'Ein junger Falcons-Spieler auf dem Eis mit jubelnd erhobenen Armen.',
   entry: 'Kinder mit Helmen und ein Trainer bei einer gemeinsamen Übung auf dem Eis.',
   family: 'Junge Falcons-Fans und Spieler feuern gemeinsam mit einer Vereinsfahne an.',
-  galleryLabel: 'MOMENTE AUS DER FALCONS-FAMILIE', galleryTitle: 'Das sind wir. Das ist unser Eis.',
+  galleryLabel: 'TRAINING & SPIELTAG', galleryTitle: 'Einblicke aufs Eis.',
   gallery: [
    ['Hockey in Bewegung', 'Ein Nachwuchsspieler führt den Puck durch einen Übungsparcours.'],
    ['Zusammen auf dem Eis', 'Ein Trainer mit Falcons-Jacke begleitet das Training auf dem Eis.'],
@@ -26,7 +26,7 @@ export const mediaText = {
   hero: 'Un giovane giocatore dei Falcons sul ghiaccio festeggia con le braccia alzate.',
   entry: 'Bambini con il casco e un allenatore durante un esercizio insieme sul ghiaccio.',
   family: 'Giovani tifosi e giocatori fanno il tifo insieme con una bandiera del club.',
-  galleryLabel: 'MOMENTI DELLA FAMIGLIA FALCONS', galleryTitle: 'Siamo noi. Questo è il nostro ghiaccio.',
+  galleryLabel: 'ALLENAMENTO & PARTITE', galleryTitle: 'Momenti sul ghiaccio.',
   gallery: [
    ['Hockey in movimento', 'Un giovane giocatore conduce il disco in un percorso di allenamento.'],
    ['Insieme sul ghiaccio', 'Un allenatore con la giacca Falcons segue l’allenamento sul ghiaccio.'],
