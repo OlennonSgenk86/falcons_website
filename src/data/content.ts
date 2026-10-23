@@ -1,7 +1,7 @@
 export const content = {
   "de": {
     "lang": "de",
-    "title": "Kleine Falcons. Große Leidenschaft.",
+    "title": "Kleine Falken. Große Leidenschaft.",
     "description": "Eishockey entdecken beim HC Falcons Brixen. Ein Einstieg für Kinder und ihre Familien.",
     "registration": "Anmeldungen",
     "shop": "Onlineshop",
@@ -13,22 +13,38 @@ export const content = {
       "Eltern-FAQ",
       "Kontakt"
     ],
-    "join": "Mitmachen",
+    "join": "Jetzt anmelden",
     "eyebrow": "HC FALCONS BRIXEN · NACHWUCHS",
     "hero": [
-      "Kleine Falcons.",
+      "Kleine Falken.",
       "Große",
       "Leidenschaft."
     ],
     "intro": "Die ersten Schritte auf dem Eis. Neue Freunde fürs Leben. Und ein Team, das zusammenwächst. Entdeckt mit uns die Freude am Eishockey.",
-    "cta": "Jetzt mitmachen",
+    "cta": "Jetzt anmelden",
     "secondary": "So beginnt’s",
     "scroll": "Gemeinsam aufs Eis",
     "benefits": [
-      "Bewegung",
-      "Freundschaft",
-      "Teamgeist",
-      "Spaß"
+      [
+        "01",
+        "Bewegung",
+        "Balance, Koordination und jede Menge Energie: Eishockey bringt Kinder in Bewegung."
+      ],
+      [
+        "02",
+        "Freundschaft",
+        "Zusammen lachen, Neues ausprobieren und Teil einer Mannschaft werden."
+      ],
+      [
+        "03",
+        "Teamgeist",
+        "Aufeinander achten. Sich gegenseitig helfen. Gemeinsam etwas schaffen."
+      ],
+      [
+        "04",
+        "Spaß",
+        "Die Freude am Spiel steht im Mittelpunkt. Jeder kleine Fortschritt zählt."
+      ]
     ],
     "pathLabel": "SO FINDET IHR DEN PASSENDEN EINSTIEG",
     "pathTitle": "Anmelden. Ausprobieren. Fragen klären.",
@@ -37,12 +53,12 @@ export const content = {
       [
         "Noch keine Eislauferfahrung",
         "Wählt einen passenden Eislaufkurs und meldet euer Kind direkt über das Anmeldeportal an.",
-        "Eislaufkurs auswählen"
+        "Jetzt anmelden"
       ],
       [
         "Eislauferfahrung vorhanden",
         "Meldet euer Kind im Anmeldeportal in seiner jeweiligen Alterskategorie an.",
-        "Zur Kategorieanmeldung"
+        "Jetzt anmelden"
       ],
       [
         "Erst ausprobieren oder Fragen klären",
@@ -96,7 +112,7 @@ export const content = {
     "contactHint": "Fragen, Unsicherheiten oder ein Probetraining? Schreibt uns an die Vereinsadresse.",
     "sponsor": "RAUM FÜR UNSERE PARTNER",
     "sponsorText": "Sponsorenlogos folgen nach Freigabe.",
-    "footerLine": "Kleine Falcons. Große Leidenschaft.",
+    "footerLine": "Kleine Falken. Große Leidenschaft.",
     "legal": "Impressum",
     "privacy": "Datenschutz",
     "legalText": "Die rechtlichen Pflichtangaben und Datenschutzinformationen sind noch nicht hinterlegt. Dieser Bereich ist ein Platzhalter für die interne Vorschau.",
@@ -111,24 +127,19 @@ export const content = {
         "badge": "AB 4 JAHREN · OHNE VORKENNTNISSE",
         "title": "Eislaufen lernen",
         "text": "Unsere Eislaufkurse sind für Kinder ab 4 Jahren geeignet. Vorkenntnisse sind nicht nötig.",
-        "details": "Es gibt mehrere Kurse pro Saison. Aktuelle Termine und Beiträge findet ihr im Anmeldeportal.",
         "action": "Zum Eislaufkurs anmelden"
       },
       {
         "badge": "MIT EISLAUFERFAHRUNG",
         "title": "Mit Eishockey starten",
-        "text": "Wer bereits eislaufen kann, kann direkt ins Training einsteigen und sich im Anmeldeportal in seiner Alterskategorie anmelden.",
-        "details": "Unverbindliches Schnuppern ist möglich. Für ein Probetraining oder bei Unsicherheit schreibt an info@hc-falcons.it.",
         "action": "Zu den Anmeldungen",
         "trial": "Probetraining anfragen"
       }
     ],
     "participationLabel": "Teilnahme Hockeyschool",
     "participationText": "Das erste Jahr in der Hockeyschool ist für Kinder unter 8 Jahren kostenlos. Die jeweiligen Beiträge sind im Anmeldeportal einsehbar.",
-    "equipmentLabel": "Ausrüstungsleihe · kostenpflichtig",
+    "equipmentLabel": "Ausrüstung · Leihgebühr",
     "equipmentText": "Der Verein stellt bis 16 Jahre Ausrüstung gegen eine Leihgebühr zur Verfügung. Diese Gebühr ist von der kostenlosen Teilnahme im ersten Hockeyschool-Jahr getrennt.",
-    "seasonLabel": "Saison & Sommercamps",
-    "seasonText": "Die Saisonangebote laufen von September bis Ende April. Im August werden zusätzlich Sommercamps angeboten.",
     "categoriesLabel": "Unsere Jugendkategorien",
     "categories": "U8 · U10 · U12 · U14 · U16 · U19",
     "cooperation": "U16 und U19 spielen in Kooperation mit Sterzing.",
@@ -136,11 +147,15 @@ export const content = {
     "supportText": "In jeder Kategorie übernehmen Eltern die Betreuerrolle. Sie haben jeweils eine Ansprechperson im Vorstand, die sie dabei unterstützt.",
     "supportDistinction": "Diese organisatorische Betreuerrolle ist vom sportlichen Trainerteam zu unterscheiden.",
     "contactMailLabel": "Fragen & Probetraining",
-    "contactAction": "Zum Anmeldeportal"
+    "contactAction": "Zum Anmeldeportal",
+    "whyLabel": "MEHR ALS EIN SPORT",
+    "whyTitle": "Hier wächst mehr als Können.",
+    "whyIntro": "Auf dem Eis lernen Kinder viel – und nehmen noch mehr mit nach Hause.",
+    "categoriesText": "Wir stellen in allen Jugendkategorien eine Mannschaft. So haben alle Kinder von September bis April die Möglichkeit zu trainieren und an Meisterschafts- und Freundschaftsspielen teilzunehmen."
   },
   "it": {
     "lang": "it",
-    "title": "Piccoli Falcons. Grande passione.",
+    "title": "Piccoli falchi. Grande passione.",
     "description": "Scoprire l’hockey con HC Falcons Brixen. Un primo passo per bambini e famiglie.",
     "registration": "Iscrizioni",
     "shop": "Shop online",
@@ -152,22 +167,38 @@ export const content = {
       "FAQ genitori",
       "Contatti"
     ],
-    "join": "Partecipa",
+    "join": "Iscriviti ora",
     "eyebrow": "HC FALCONS BRIXEN · SETTORE GIOVANILE",
     "hero": [
-      "Piccoli Falcons.",
+      "Piccoli falchi.",
       "Grande",
       "passione."
     ],
     "intro": "I primi passi sul ghiaccio. Nuovi amici. Una squadra che cresce insieme. Scoprite con noi la gioia dell’hockey.",
-    "cta": "Inizia con noi",
+    "cta": "Iscriviti ora",
     "secondary": "Come iniziare",
     "scroll": "Insieme sul ghiaccio",
     "benefits": [
-      "Movimento",
-      "Amicizia",
-      "Spirito di squadra",
-      "Divertimento"
+      [
+        "01",
+        "Movimento",
+        "Equilibrio, coordinazione ed energia: l’hockey mette in movimento i bambini."
+      ],
+      [
+        "02",
+        "Amicizia",
+        "Ridere insieme, provare qualcosa di nuovo e sentirsi parte di una squadra."
+      ],
+      [
+        "03",
+        "Spirito di squadra",
+        "Prendersi cura degli altri. Aiutarsi. Raggiungere un obiettivo insieme."
+      ],
+      [
+        "04",
+        "Divertimento",
+        "La gioia del gioco viene prima di tutto. Ogni piccolo progresso conta."
+      ]
     ],
     "pathLabel": "COME SCEGLIERE IL PERCORSO",
     "pathTitle": "Iscriversi. Provare. Chiarire i dubbi.",
@@ -176,12 +207,12 @@ export const content = {
       [
         "Nessuna esperienza di pattinaggio",
         "Scegliete un corso di pattinaggio adatto e iscrivete vostro figlio direttamente tramite il portale.",
-        "Scegli il corso di pattinaggio"
+        "Iscriviti ora"
       ],
       [
         "Sa già pattinare",
         "Iscrivete vostro figlio nella rispettiva categoria di età tramite il portale iscrizioni.",
-        "Iscriviti alla categoria"
+        "Iscriviti ora"
       ],
       [
         "Prima provare o chiarire i dubbi",
@@ -235,7 +266,7 @@ export const content = {
     "contactHint": "Domande, dubbi o un allenamento di prova? Scriveteci all’indirizzo del club.",
     "sponsor": "SPAZIO AI NOSTRI PARTNER",
     "sponsorText": "Loghi degli sponsor dopo approvazione.",
-    "footerLine": "Piccoli Falcons. Grande passione.",
+    "footerLine": "Piccoli falchi. Grande passione.",
     "legal": "Note legali",
     "privacy": "Privacy",
     "legalText": "Le informazioni legali e sulla privacy non sono ancora disponibili. Questa sezione è un segnaposto per l’anteprima interna.",
@@ -250,24 +281,19 @@ export const content = {
         "badge": "DAI 4 ANNI · SENZA ESPERIENZA",
         "title": "Imparare a pattinare",
         "text": "I nostri corsi di pattinaggio sono rivolti ai bambini dai 4 anni. Non è richiesta alcuna esperienza.",
-        "details": "Durante la stagione si svolgono più corsi. Date aggiornate e quote sono consultabili nel portale iscrizioni.",
         "action": "Iscriviti al corso di pattinaggio"
       },
       {
         "badge": "PER CHI SA GIÀ PATTINARE",
         "title": "Iniziare con l’hockey",
-        "text": "Chi sa già pattinare può entrare direttamente in allenamento e iscriversi alla propria categoria di età tramite il portale.",
-        "details": "È possibile provare senza impegno. Per concordare un allenamento di prova o in caso di dubbi, scrivete a info@hc-falcons.it.",
         "action": "Vai alle iscrizioni",
         "trial": "Richiedi un allenamento di prova"
       }
     ],
     "participationLabel": "Partecipazione alla Hockeyschool",
     "participationText": "Il primo anno nella Hockeyschool è gratuito per i bambini sotto gli 8 anni. Le quote delle rispettive attività sono consultabili nel portale iscrizioni.",
-    "equipmentLabel": "Noleggio attrezzatura · a pagamento",
+    "equipmentLabel": "Attrezzatura · quota di noleggio",
     "equipmentText": "Il club mette a disposizione l’attrezzatura fino ai 16 anni dietro pagamento di una quota di noleggio. Questa quota è separata dalla partecipazione gratuita al primo anno di Hockeyschool.",
-    "seasonLabel": "Stagione e camp estivi",
-    "seasonText": "Le attività stagionali si svolgono da settembre a fine aprile. Ad agosto vengono proposti anche camp estivi.",
     "categoriesLabel": "Le nostre categorie giovanili",
     "categories": "U8 · U10 · U12 · U14 · U16 · U19",
     "cooperation": "U16 e U19 in collaborazione con Vipiteno.",
@@ -275,6 +301,10 @@ export const content = {
     "supportText": "In ogni categoria alcuni genitori svolgono il ruolo di accompagnatori. Hanno una persona di riferimento nel direttivo che li sostiene in questo compito.",
     "supportDistinction": "Questo ruolo di supporto organizzativo è distinto da quello dello staff tecnico degli allenatori.",
     "contactMailLabel": "Domande e allenamento di prova",
-    "contactAction": "Al portale iscrizioni"
+    "contactAction": "Al portale iscrizioni",
+    "whyLabel": "PIÙ DI UNO SPORT",
+    "whyTitle": "Qui si cresce, insieme.",
+    "whyIntro": "Sul ghiaccio si impara tanto. E si porta a casa ancora di più.",
+    "categoriesText": "Abbiamo una squadra in tutte le categorie giovanili. Da settembre ad aprile, tutti i bambini hanno così la possibilità di allenarsi e partecipare al campionato e alle partite amichevoli."
   }
 };
