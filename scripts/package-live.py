@@ -1,6 +1,8 @@
 """Package a tested Astro live build; never include repository or database files."""
 from pathlib import Path
-from zipfile import ZipFile, ZIP_DEFLATED
+from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
+from datetime import datetime
+import stat
 from hashlib import sha256
 
 root = Path(__file__).resolve().parent.parent
@@ -53,7 +55,11 @@ release = root / 'docs/releases/falcons-website-plesk.zip'
 release.parent.mkdir(parents=True, exist_ok=True)
 with ZipFile(release, 'w', ZIP_DEFLATED) as archive:
     for file in files:
-        archive.write(file, file.relative_to(build).as_posix())
+        info = ZipInfo(file.relative_to(build).as_posix(), datetime.fromtimestamp(file.stat().st_mtime).timetuple()[:6])
+        info.create_system = 3
+        info.external_attr = (stat.S_IFREG | 0o644) << 16
+        info.compress_type = ZIP_DEFLATED
+        archive.writestr(info, file.read_bytes())
 checksum = sha256(release.read_bytes()).hexdigest()
 release.with_suffix('.zip.sha256').write_text(f'{checksum}  {release.name}\n')
 print(f'Created {release.name}: {len(files)} files, {release.stat().st_size:,} bytes')
