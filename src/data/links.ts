@@ -9,3 +9,8 @@ export const socialLinks = [
   { label: 'Instagram', url: 'https://www.instagram.com/falconsbrixen/' },
   { label: 'YouTube', url: 'https://www.youtube.com/@FALCONShockeyBX' },
 ];
+
+export const contact = {
+  phone: '+3313779485',
+  person: 'Oskar Berger',
+};

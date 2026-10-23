@@ -1,6 +1,7 @@
 export const content = {
   "de": {
     "lang": "de",
+    "contactPersonLabel": "Ansprechperson",
     "title": "Kleine Falken. Große Leidenschaft.",
     "description": "Eishockey entdecken beim HC Falcons Brixen. Ein Einstieg für Kinder und ihre Familien.",
     "registration": "Anmeldungen",
@@ -163,6 +164,7 @@ export const content = {
   },
   "it": {
     "lang": "it",
+    "contactPersonLabel": "Referente",
     "title": "Piccoli falchi. Grande passione.",
     "description": "Scoprire l’hockey con HC Falcons Brixen. Un primo passo per bambini e famiglie.",
     "registration": "Iscrizioni",

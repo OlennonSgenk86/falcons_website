@@ -46,3 +46,4 @@
 @media(max-width:760px){.main-sponsor{padding-top:45px;padding-bottom:45px}.main-sponsor .sponsor-logo{width:180px;height:180px}}
 .social-links{display:flex;flex-wrap:wrap;gap:16px;align-items:center}.social-links a{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:#dce1e0;text-decoration:underline;text-underline-offset:4px}.social-links .arrow-icon{width:11px;height:11px}.social-links a:hover{color:white}
 @media(max-width:760px){.footer-contact{gap:16px}.social-links{gap:17px}}
+.contact-phone{display:flex;flex-direction:column;align-items:flex-start;gap:9px;border-top:1px solid #ffffff50;padding:20px 0;margin-bottom:10px}.contact-phone>span{font-size:12px;line-height:1.6}.contact-phone>a{font:700 26px 'League Spartan',sans-serif;text-decoration:underline;text-underline-offset:5px}.spirit .contact-phone{border-color:#bbb4a5}

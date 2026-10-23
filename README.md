@@ -97,3 +97,7 @@ Die FAQ enthalten jetzt neun Fragen. Spiele beginnen in U8; Turniere werden bis 
 - GitHub-Pages-Builds erläutern zusätzlich das tatsächlich verwendete Vorschauhosting bei GitHub. Die Produktionstexte beziehen sich auf www.hc-falcons.it und das geplante EU-Hosting.
 - Die verantwortliche Vereinsadresse stammt aus dem WordPress-Impressum (zuletzt geändert 2023) und ist vor Live-Freigabe zu bestätigen. Foto-Freigaben und die tatsächlich einschlägigen Rechtsgrundlagen sind ebenfalls vor Live-Veröffentlichung zu prüfen. Der sichtbar markierte Entwurf wird erst nach Klärung der offenen Angaben zur Live-Fassung.
 - Der SQL-Export und andere Datenbankinhalte bleiben außerhalb des öffentlichen Repositorys.
+
+## Telefonkontakt
+
+Bestätigte Telefonnummer: `+3313779485`, Ansprechperson: Oskar Berger. Die gemeinsame Quelle ist `contact` in `src/data/links.ts`. Kontaktbereich, Footer und Datenschutzseiten verwenden anklickbare `tel:`-Links in beiden Sprachen. Oskar Berger wird damit nicht als gesetzlicher Vertreter benannt; diese Funktion ist gesondert zu bestätigen. Die historischen WordPress-Quelldaten bleiben unverändert außerhalb des öffentlichen Repositorys.
