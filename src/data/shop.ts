@@ -1,7 +1,6 @@
 import jacket from '../../Jacke.png';
 import trainingJacket from '../../Trainerjacke.png';
 import trousers from '../../Trainerhose.png';
-import trousersDetail from '../../Screenshot 2026-09-09 073638.png';
 import backpack from '../../Rucksack.png';
 import trainingShirt from '../../T-shirt.png';
 import shirtNavy from '../../T-shirt 2.png';
@@ -16,7 +15,6 @@ export const shopProducts = [
  { image: jacket, de: 'Kapuzenjacke', it: 'Giacca con cappuccio' },
  { image: trainingJacket, de: 'Trainingsjacke', it: 'Giacca da allenamento' },
  { image: trousers, de: 'Trainingshose', it: 'Pantaloni da allenamento' },
- { image: trousersDetail, de: 'Trainingshose · Detailansicht', it: 'Pantaloni da allenamento · Dettaglio' },
  { image: backpack, de: 'Rucksack', it: 'Zaino' },
  { image: trainingShirt, de: 'Trainingsshirt', it: 'Maglia da allenamento' },
  { image: shirtNavy, de: 'T-Shirt · Dunkelblau', it: 'T-shirt · Blu scuro' },

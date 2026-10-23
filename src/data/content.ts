@@ -35,7 +35,7 @@ export const content = {
       ],
       [
         "02",
-        "Freundschaft",
+        "Freunde",
         "Zusammen lachen, Neues ausprobieren und Teil einer Mannschaft werden."
       ],
       [
@@ -198,7 +198,7 @@ export const content = {
       ],
       [
         "02",
-        "Amicizia",
+        "Amici",
         "Ridere insieme, provare qualcosa di nuovo e sentirsi parte di una squadra."
       ],
       [
