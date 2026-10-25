@@ -87,7 +87,7 @@ export const content = {
       ],
       [
         "Welche Ausrüstung gibt es vom Verein?",
-        "Der Verein stellt bis 16 Jahre Ausrüstung gegen eine Leihgebühr zur Verfügung. Fragen zur Ausrüstung für den ersten Besuch können per E-Mail an info@hc-falcons.it geklärt werden."
+        "Der Verein stellt bis einschließlich zur Kategorie U14 Ausrüstung gegen eine Leihgebühr zur Verfügung. Fragen zur Ausrüstung für den ersten Besuch können per E-Mail an info@hc-falcons.it geklärt werden."
       ],
       [
         "Wann finden die Angebote statt?",
@@ -143,7 +143,7 @@ export const content = {
     "participationLabel": "Teilnahme Hockeyschool",
     "participationText": "Das erste Jahr in der Hockeyschool ist kostenlos. Ab dem zweiten Jahr ist die U8-Kategorie-Quote zu bezahlen. Eine Übersicht zu den Quoten der einzelnen Kategorien findet ihr unter Anmeldungen.",
     "equipmentLabel": "Ausrüstung · Leihgebühr",
-    "equipmentText": "Der Verein stellt bis 16 Jahre Ausrüstung gegen eine Leihgebühr zur Verfügung. Diese Gebühr ist von der kostenlosen Teilnahme im ersten Hockeyschool-Jahr getrennt.",
+    "equipmentText": "Der Verein stellt bis einschließlich zur Kategorie U14 Ausrüstung gegen eine Leihgebühr zur Verfügung. Diese Gebühr ist von der kostenlosen Teilnahme im ersten Hockeyschool-Jahr getrennt.",
     "categoriesLabel": "Unsere Jugendkategorien",
     "categories": "U8 · U10 · U12 · U14 · U16 · U19",
     "cooperation": "U16 und U19 spielen in Kooperation mit Sterzing.",
@@ -250,7 +250,7 @@ export const content = {
       ],
       [
         "Quale attrezzatura fornisce il club?",
-        "Il club mette a disposizione l’attrezzatura fino ai 16 anni dietro pagamento di una quota di noleggio. Per sapere cosa serve alla prima visita, scrivete a info@hc-falcons.it."
+        "Il club mette a disposizione l’attrezzatura fino alla categoria U14 compresa dietro pagamento di una quota di noleggio. Per sapere cosa serve alla prima visita, scrivete a info@hc-falcons.it."
       ],
       [
         "Quando si svolgono le attività?",
@@ -306,7 +306,7 @@ export const content = {
     "participationLabel": "Partecipazione alla Hockeyschool",
     "participationText": "Il primo anno nella Hockeyschool è gratuito. Dal secondo anno si paga la quota della categoria U8. Una panoramica delle quote delle singole categorie è disponibile nella sezione iscrizioni.",
     "equipmentLabel": "Attrezzatura · quota di noleggio",
-    "equipmentText": "Il club mette a disposizione l’attrezzatura fino ai 16 anni dietro pagamento di una quota di noleggio. Questa quota è separata dalla partecipazione gratuita al primo anno di Hockeyschool.",
+    "equipmentText": "Il club mette a disposizione l’attrezzatura fino alla categoria U14 compresa dietro pagamento di una quota di noleggio. Questa quota è separata dalla partecipazione gratuita al primo anno di Hockeyschool.",
     "categoriesLabel": "Le nostre categorie giovanili",
     "categories": "U8 · U10 · U12 · U14 · U16 · U19",
     "cooperation": "U16 e U19 in collaborazione con Vipiteno.",
