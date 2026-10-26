@@ -1,0 +1,36 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/sponsors/spark.png';
+const { lang } = Astro.props as { lang: 'de' | 'it' };
+const de = lang === 'de';
+const close = de ? 'Schließen' : 'Chiudi';
+---
+<aside class="spark-teaser" data-spark-teaser hidden aria-label={de ? 'Spark Aktion für Mitglieder' : 'Iniziativa Spark per i soci'}>
+ <Image src={logo} width={60} height={60} alt="Spark" format="webp"/>
+ <button class="spark-open" type="button" aria-haspopup="dialog" aria-controls="spark-action"><span>{de ? 'SPARK Aktion für Mitglieder' : 'Iniziativa SPARK per i soci'}</span><strong>{de ? '50 € Bonus sichern' : '50 € di bonus'} <span aria-hidden="true">›</span></strong><small>{de ? 'Für Mitglieder unter 30 · bis 31.12.2026' : 'Per i soci under 30 · entro il 31.12.2026'}</small></button>
+ <button class="spark-dismiss" type="button" aria-label={de ? 'Aktionshinweis schließen' : 'Chiudi l’avviso'}>×</button>
+</aside>
+<dialog id="spark-action" class="spark-modal" aria-labelledby="spark-action-title">
+ <div class="spark-modal-top"><Image src={logo} width={58} height={58} alt="Spark" format="webp"/><span>{de ? 'UNSERE PARTNERSCHAFT. EUER VORTEIL.' : 'LA NOSTRA PARTNERSHIP. IL VOSTRO VANTAGGIO.'}</span><button type="button" data-spark-close aria-label={close} autofocus>×</button></div>
+ <div class="spark-modal-content"><p class="spark-kicker">{de ? 'SPARK AKTION FÜR MITGLIEDER' : 'INIZIATIVA SPARK PER I SOCI'}</p><h2 id="spark-action-title">{de ? '50 € Bonus für unsere Mitglieder – mit Spark' : '50 € di bonus per i nostri soci – con Spark'}</h2>
+ {de ? <><p>Liebe Mitglieder, liebe Eltern,</p><p><strong>Spark, eine Marke der Südtiroler Sparkasse, ist Hauptsponsor unserer Jugend.</strong> Im Rahmen dieser Partnerschaft profitieren unsere Mitglieder unter 30 Jahren von einer besonderen Aktion:</p><p>Wer <strong>bis zum 31.12.2026</strong> in einer Sparkasse-Filiale die Zahlung des jährlichen Mitgliedsbeitrags nachweist, erhält <strong>50 € auf ein Sparkasse-Konto der Spark-Produktlinie</strong> gutgeschrieben.</p><p>Das Konto kann neu eröffnet werden oder bereits bestehen und muss auf den Namen des Sportlers bzw. der Sportlerin <strong>unter 30 Jahren</strong> lauten.</p><p>Wir bedanken uns bei Spark für die Unterstützung unserer Jugend und wünschen euch viel Freude mit diesem Vorteil!</p><p class="spark-signoff">Euer Vorstand der Falcons Brixen</p></> : <><p>Cari soci, cari genitori,</p><p><strong>Spark, un marchio della Cassa di Risparmio di Bolzano, è lo sponsor principale del nostro settore giovanile.</strong> Nell’ambito di questa partnership, i nostri soci under 30 possono beneficiare di un’iniziativa speciale:</p><p>Chi presenta <strong>entro il 31.12.2026</strong> presso una filiale Sparkasse la prova del pagamento della quota associativa annuale riceve un <strong>contributo di 50 € su un conto Sparkasse della gamma Spark</strong>.</p><p>Il conto può essere nuovo o già esistente e deve essere intestato all’<strong>atleta under 30</strong>.</p><p>Ringraziamo Spark per il sostegno al nostro settore giovanile e vi invitiamo ad approfittare di questa opportunità!</p><p class="spark-signoff">Il direttivo dei Falcons Bressanone</p></>}
+ <button class="spark-done" type="button" data-spark-close>{close}</button></div>
+</dialog>
+<script>
+ const teaser = document.querySelector<HTMLElement>('[data-spark-teaser]');
+ const dialog = document.querySelector<HTMLDialogElement>('#spark-action');
+ if (teaser && dialog && Date.now() < Date.parse('2027-01-01T00:00:00+01:00')) {
+  teaser.hidden = false;
+  teaser.querySelector('.spark-open')?.addEventListener('click', () => dialog.showModal());
+  teaser.querySelector('.spark-dismiss')?.addEventListener('click', () => { teaser.hidden = true; });
+  dialog.querySelectorAll('[data-spark-close]').forEach(button => button.addEventListener('click', () => dialog.close()));
+  dialog.addEventListener('click', event => { if (event.target === dialog) {
+   const bounds = dialog.getBoundingClientRect();
+   if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
+  }});
+ }
+</script>
+<style>
+.spark-teaser{position:absolute;z-index:9;right:5%;top:108px;background:#fff;display:flex;align-items:center;gap:15px;padding:17px 42px 17px 17px;color:#172027;box-shadow:0 9px 35px #0004;border-bottom:4px solid #e50019;border-radius:4px;max-width:400px}.spark-teaser[hidden]{display:none}.spark-teaser>img{width:59px;height:59px;object-fit:contain}.spark-open{padding:0;border:0;background:none;text-align:left;cursor:pointer;color:inherit}.spark-open>span{font:500 11px Roboto,sans-serif}.spark-open strong{display:block;font:800 25px 'League Spartan',sans-serif;margin-top:6px;color:#e50019}.spark-open strong span{margin-left:9px;font-family:Arial,sans-serif}.spark-open small{display:block;font:10px Roboto,sans-serif;margin-top:7px;color:#62676b}.spark-dismiss{position:absolute;right:7px;top:5px;border:0;background:none;font:23px Arial;color:#62676b;width:32px;height:32px;cursor:pointer}.spark-modal{padding:0;border:0;margin:auto;background:white;width:730px;max-width:calc(100% - 32px);max-height:calc(100dvh - 48px);overflow:auto;color:#172027;border-radius:8px;box-shadow:0 20px 80px #0006}.spark-modal::backdrop{background:#071015b8;backdrop-filter:blur(3px)}.spark-modal-top{background:#e50019;color:white;display:flex;align-items:center;gap:22px;padding:15px 37px}.spark-modal-top img{width:58px;height:58px;object-fit:contain;flex-shrink:0}.spark-modal-top span{font:500 10px Roboto,sans-serif;letter-spacing:.12em}.spark-modal-top button{margin-left:auto;border:1px solid #ffffff80;border-radius:50%;background:none;color:white;min-width:34px;height:34px;font:25px Arial;cursor:pointer}.spark-modal-content{padding:30px 42px}.spark-modal-content .spark-kicker{color:#d00017;font:500 10px Roboto,sans-serif;letter-spacing:.13em;margin:0 0 13px}.spark-modal-content h2{font:800 42px/.99 'League Spartan',sans-serif;letter-spacing:-.03em;margin:0 0 24px;color:#172027;text-transform:none}.spark-modal-content p{font:400 14px/1.65 Roboto,sans-serif;margin:0 0 15px;color:#333e43}.spark-modal-content strong{font-weight:500}.spark-modal-content .spark-signoff{font-weight:500}.spark-done{border:0;background:#d00017;color:white;font:700 16px 'League Spartan',sans-serif;padding:13px 24px;cursor:pointer;margin-top:4px}.spark-open:focus-visible,.spark-dismiss:focus-visible,.spark-done:focus-visible{outline:3px solid #172027;outline-offset:3px}.spark-modal-top button:focus-visible{outline:3px solid white;outline-offset:3px}
+@media(max-width:1050px){.spark-teaser{position:relative;top:auto;right:auto;margin:16px 5% 0 auto;width:max-content;max-width:90%}}@media(max-width:480px){.spark-teaser{gap:10px;padding:13px 38px 13px 13px}.spark-teaser>img{width:46px;height:46px}.spark-open strong{font-size:23px}.spark-open small{font-size:9px}.spark-modal-top{gap:12px;padding:15px 20px}.spark-modal-top span{font-size:8px;line-height:1.6;letter-spacing:.05em}.spark-modal-content{padding:25px 22px}.spark-modal-content h2{font-size:32px}.spark-modal-content p{font-size:13px}}
+</style>
